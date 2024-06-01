@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--black-color);
+  padding: 1.5rem;
+}
+
+.header div {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.header ul {
+  display: flex;
+  column-gap: 1rem;
+  padding-right: 1rem;
+  border-right: 1px solid black;
+}
