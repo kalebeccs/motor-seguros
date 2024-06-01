@@ -1,0 +1,6 @@
+.main__index {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8rem;
+    padding: 3rem 1.5rem;
+}

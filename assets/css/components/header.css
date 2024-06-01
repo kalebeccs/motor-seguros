@@ -17,3 +17,7 @@
   padding-right: 1rem;
   border-right: 1px solid black;
 }
+
+.active{
+  font-weight: bold;
+}

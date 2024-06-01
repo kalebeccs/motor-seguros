@@ -1,0 +1,12 @@
+.main__contact{
+    display: flex;
+    column-gap: 5rem;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+}
+
+.contact__infos{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}

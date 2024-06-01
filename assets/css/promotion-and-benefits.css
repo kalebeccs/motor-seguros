@@ -1,0 +1,28 @@
+.main__pb{
+    padding: 0 1.5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+}
+
+.carousel{
+    min-height: 50vh;
+    background-color: lightgray;
+    display: grid;
+    place-items: center;
+}
+
+.benefits,
+.promotions{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.benefits__list,
+.promotions__list{
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+}

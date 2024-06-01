@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url(./components/header.css);
 @import url(./components/footer.css);
+@import url(./index.css);
+@import url(./insurance-and-simulation.css);
+@import url(./promotion-and-benefits.css);
+@import url(./contact.css);
+@import url(./login.css);
 
 :root{
   --white-color: #FFFFFF;
@@ -58,12 +63,6 @@ img {
   height: auto;
 }
 
-
-
 .main{
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  row-gap: 8rem;
-  padding: 3rem 1.5rem;
 }
