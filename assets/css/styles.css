@@ -6,10 +6,21 @@
 @import url(./promotion-and-benefits.css);
 @import url(./contact.css);
 @import url(./login.css);
+@import url(./404.css);
 
 :root{
   --white-color: #FFFFFF;
   --black-color: #000000;
+
+  --darkblue: #05191f;
+  --lightblue: #166d83;
+  
+  --c1: #25aed9;
+  --c2: #8dd5eb;
+  --c3: #145e75;
+  --c4: #7c848c;
+  --c5: #bcc3c4;
+  --c6: #2b3c40;
 
   --body-font: "Montserrat", sans-serif;
   --normal-font-size: .938rem;
