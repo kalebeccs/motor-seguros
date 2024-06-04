@@ -4,44 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <script src="./assets/js/main.js" defer></script>
 
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!--=============== JS ===============-->
+    <script src="./assets/js/header.js" defer></script>
+    <script src="./assets/js/main.js" defer></script>
+    
+    <!--=============== TITLE AND ICON ===============-->
     <title>Contact | Motor Seguros</title>
     <link rel="shortcut icon" href="./assets/img/images.ico" type="image/x-icon">
 
     <meta name="title" content="Motor Seguros">
-    <meta name="description"
-        content="Motor Seguros é um projeto desenvolvido para a disciplina de Programação Web, que visa criar um site de seguros para carros e motos. Este site permite aos usuários visualizar e contratar seguros de maneira simples e eficiente.">
+    <meta name="description" content="Motor Seguros é um projeto desenvolvido para a disciplina de Programação Web, que visa criar um site de seguros para carros e motos. Este site permite aos usuários visualizar e contratar seguros de maneira simples e eficiente.">
     <meta name="keywords" content="seguros, seguro para carro, seguro para moto, seguro para veiculo, seguro veicular">
     <meta name="author" content="kalebeccs, rafadegus, guilhermelouro, miguellobato96">
 
     <meta property="og:title" content="Motor Seguros">
-    <meta property="og:description"
-        content="Motor Seguros é um projeto desenvolvido para a disciplina de Programação Web, que visa criar um site de seguros para carros e motos. Este site permite aos usuários visualizar e contratar seguros de maneira simples e eficiente.">
-    <meta property="og:site_name" content="motor-seguros.vercel.app">
-    <meta property="og:url" content="https://motor-seguros.vercel.app/">
+    <meta property="og:description" content="Motor Seguros é um projeto desenvolvido para a disciplina de Programação Web, que visa criar um site de seguros para carros e motos. Este site permite aos usuários visualizar e contratar seguros de maneira simples e eficiente.">
+    <meta property="og:site_name" content="motorseguros.pt">
+    <meta property="og:url" content="https://motorseguros.pt/">
     <meta property="og:type" content="website">
     <meta property="og:image" content="">
+
 </head>
 
 <body>
-    <header class="header">
-        <h1>
-            <a href="./index.html">Logotipo</a>
-        </h1>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./insurance-and-simulation.html">Insurance & Simulation</a></li>
-                    <li><a href="./promotion-and-benefits.html">Promotion & Benefits</a></li>
-                    <li><a class="active" href="./contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <a href="./login.html">Login</a>
-        </div>
-    </header>
+    <header class="header" id="header">
+        <nav class="nav container">
+           <a href="./index.html" class="nav__logo">Logo</a>
+
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li class="nav__item">
+                    <a href="./index.html" class="nav__link">Home</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="./insurance-and-simulation.html" class="nav__link">Insurance <br>& Simulation</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="./promotion-and-benefits.html" class="nav__link">Promotion <br>& Benefits</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="#" class="nav__link active">Contact</a>
+                 </li>
+              </ul>
+
+              <!-- Close button -->
+              <div class="nav__close" id="nav-close">
+                 <i class="ri-close-line"></i>
+              </div>
+           </div>
+
+           <div class="nav__actions">
+              <!-- Login button -->
+              <i class="ri-user-line nav__login" id="login-btn"></i>
+
+              <!-- Toggle button -->
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line"></i>
+              </div>
+           </div>
+        </nav>
+     </header>
+
+     <!--==================== LOGIN ====================-->
+     <div class="login" id="login">
+        <form action="" class="login__form">
+           <h2 class="login__title">Log In</h2>
+
+           <div class="login__group">
+              <div>
+                 <label for="email" class="login__label">Email</label>
+                 <input type="email" placeholder="Write your email" id="email" class="login__input">
+              </div>
+
+              <div>
+                 <label for="password" class="login__label">Password</label>
+                 <input type="password" placeholder="Enter your password" id="password" class="login__input">
+              </div>
+           </div>
+
+           <div>
+              <p class="login__signup">
+                 You do not have an account? <a href="#">Sign up</a>
+              </p>
+
+              <a href="#" class="login__forgot">
+                 You forgot your password
+              </a>
+
+              <button type="submit" class="login__button">Log In</button>
+           </div>
+        </form>
+
+        <i class="ri-close-line login__close" id="login-close"></i>
+     </div>
+
     <main class="main main__contact">
         <div class="contact__infos">
             <h2>Contact Us</h2>
