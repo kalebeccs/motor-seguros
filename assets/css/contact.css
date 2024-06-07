@@ -168,6 +168,11 @@
     border-radius: .25rem;
 }
 
+.form__area{
+    resize: none;
+    height: 10rem;
+}
+
 .form__input:focus,
 .form__area:focus {
     border-color: #0066cc;
@@ -188,6 +193,7 @@
 
 .form__button:hover {
     background-color: #005bb5;
+    box-shadow: 0 2px 16px hsla(230, 75%, 32%, .15);
 }
 
 @media screen and (max-width: 576px) {
