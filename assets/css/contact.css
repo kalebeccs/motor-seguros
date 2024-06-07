@@ -1,108 +1,194 @@
 .main__contact {
     display: flex;
     flex-direction: column;
-    row-gap: 5em;
-    /* ------------------- */
-    padding: 3em;
-    margin: 2rem auto;
-    max-width: 1500px;
+    row-gap: 3rem;
+    padding-block: 3rem;
 }
 
-.contact__container{
+.contact__title{
+    text-align: center;
+    color: #333;
+    font-size: 1.75rem;
+}
+
+@media screen and (max-width: 576px) {
+    .main__contact{
+        row-gap: 2rem;
+        padding-block: 2rem;
+    }
+    .contact__title{
+        font-size: 1.5rem;
+    }
+}
+/* ==============INFO============== */
+.contact__info{
     display: flex;
-    column-gap: 2em;
+    column-gap: 3rem;
     flex-wrap: wrap;    
 }
 
-.contact__infos {
-    
+.info__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
 }
 
-.contact__infos h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 1em;
+.info__group{
+    display: flex;
+    column-gap: .75rem;
+    align-items: center;
 }
 
-.contact__infos p {
+.info__icon{
+    font-size: 1.5rem;
+}
+
+.info__icon-time{
+    font-size: 1.5rem;
+}
+
+.info__paragraph {
     font-weight: bold;
 }
 
-.contact__infos a {
+.info__link {
     color: #0066cc;
 }
 
-.contact__infos a:hover {
+.info__link:hover {
     text-decoration: underline;
 }
 
-.contact__infos table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1rem 0;
+@media screen and (max-width: 1024px) {
+    .contact__info{
+        flex-direction: column;
+        width: 500px;
+        margin-inline: auto;
+        row-gap: 1.5rem;
+    }
+    .info__content{
+        margin-inline: auto;
+    }
 }
 
-.contact__infos th,
-.contact__infos td {
-    padding: 0.5rem;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+@media screen and (max-width: 576px) {
+    .contact__info{
+        width: 100%;
+    }
 }
 
-.form-contact {
-    flex: 1;
-    min-width: 00px;
+
+/* ==============TABLE============== */
+.info__table {
     display: flex;
     flex-direction: column;
 }
 
-.form-contact h3 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 1rem;
+.table__title{
+    display: flex;
+    column-gap: .75rem;
+    align-items: center;
 }
 
-.form-contact input,
-.form-contact textarea {
-    padding: 0.75rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    width: 100%;
-    box-sizing: border-box;
+.table__rows{
+    display: flex;
+    flex-direction: column;
+    row-gap: .25rem;
+    margin-left: 2.45rem;
 }
 
-.form-contact input:focus,
-.form-contact textarea:focus {
-    border-color: #0066cc;
-    outline: none;
+.table__row{
+    display: flex;
+    justify-content: space-between;
 }
 
-.form-contact button {
-    padding: 0.75rem;
-    background-color: #0066cc;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+@media screen and (max-width: 1024px) {
+    .table__rows{
+        width: 17rem;
+    }
 }
 
-.contact__infos button:hover {
-    background-color: #005bb5;
+@media screen and (max-width: 576px) {
+    .table__rows{
+        width: initial;
+    }
 }
+
 /* ==============MAP============== */
-.contact__map{
+.info__map{
     flex: 1;
 }
 
 .map__iframe {
     width: 100%;
     height: 100%;
+    border: 1px solid lightgray;
+    border-radius: .25rem;
+    box-shadow: 0 2px 16px hsla(230, 75%, 32%, .15);
 }
 
-/* ----------------- Media-Queries ----------------- */
-@media screen and (min-width: 1000px) {
-    .map__responsive iframe {
-        height:; 
+@media screen and (max-width: 1024px) {
+    .map__iframe{
+        height: 25rem;
+    }
+}
+
+/* ==============FORM============== */
+.contact__form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    margin-inline: auto;
+}
+
+.form__title{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.form__group{
+    display: flex;
+    flex-direction: column;
+    row-gap: .25rem;
+}
+
+.form__label{
+    font-weight: bold;
+}
+
+.form__input,
+.form__area {
+    padding: .75rem 1.25rem;
+    border: 1px solid #ddd;
+    border-radius: .25rem;
+}
+
+.form__input:focus,
+.form__area:focus {
+    border-color: #0066cc;
+    box-shadow: 0 2px 16px hsla(230, 75%, 32%, .15);
+}
+
+.form__button {
+    padding: 1rem;
+    width: 80%;
+    margin-inline: auto;
+    background-color: #0066cc;
+    color: white;
+    font-weight: bold;
+    border-radius: .25rem;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.form__button:hover {
+    background-color: #005bb5;
+}
+
+@media screen and (max-width: 576px) {
+    .contact__form{
+        width: 100%;
     }
 }
