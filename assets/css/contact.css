@@ -10,7 +10,8 @@
 
 .contact__container{
     display: flex;
-    column-gap: 2em;    
+    column-gap: 2em;
+    flex-wrap: wrap;    
 }
 
 .contact__infos {
