@@ -1,24 +1,24 @@
-# Motor Seguros
+## Motor Seguros
 
-Motor Seguros é um projeto desenvolvido para a disciplina de Programação Web, que visa criar um site de seguros para carros e motos. Este site permite aos usuários visualizar e contratar seguros de maneira simples e eficiente.
+- Motor Seguros is a project developed for the Web Programming course, aiming to create a website for car and motorcycle insurance. This website allows users to view and purchase insurance in a simple and efficient manner.
 
-## Funcionalidades
+## Features
 
-- Visualização de planos de seguros para carros e motos
-- Simulação de preços de seguros
-- Cadastro de usuários
-- Área de perfil para verificar simulações 
-- Área administrativa para gerenciar planos e usuários
+- View insurance plans for cars and motorcycles
+- Insurance price simulation
+- User registration
+- Profile area to check simulations
+- Administrative area to manage plans and users
 
-## Tecnologias Utilizadas
+## Used Technologies
 
 - HTML
 - CSS
 - JavaScript
 
-## Equipe
+## Team
 
 - [Eliéser Santos](https://github.com/kalebeccs)
 - [Guilherme Louro](https://github.com/GuilhermeLouro)
-- [Rafael de Gusmão](https://github.com/Rafdegus)
 - [Miguel Lobato](https://github.com/miguellobato96)
+- [Rafael de Gusmão](https://github.com/Rafdegus)
