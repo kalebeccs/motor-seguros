@@ -24,12 +24,13 @@
 .contact__info{
     display: flex;
     column-gap: 3rem;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
 }
 
 .info__content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     row-gap: 1.5rem;
 }
 
@@ -117,11 +118,13 @@
 /* ==============MAP============== */
 .info__map{
     flex: 1;
+    display: flex;
+    align-items: center;
 }
 
 .map__iframe {
     width: 100%;
-    height: 100%;
+    height: 30rem;
     border: 1px solid lightgray;
     border-radius: .25rem;
     box-shadow: 0 2px 16px hsla(230, 75%, 32%, .15);
