@@ -14,18 +14,22 @@
     <!--=============== JS ===============-->
     <script src="./assets/js/header.js" defer></script>
     <script src="./assets/js/main.js" defer></script>
+    <script src="./assets/js/email.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
 
     <!--=============== TITLE AND ICON ===============-->
     <title>Contact | Motor Seguros</title>
     <link rel="shortcut icon" href="./assets/img/images.ico" type="image/x-icon">
 
     <meta name="title" content="Motor Seguros">
-    <meta name="description" content="Motor Seguros é um projeto desenvolvido para a disciplina de Programação Web, que visa criar um site de seguros para carros e motos. Este site permite ao utilizador visualizar e contratar seguros de maneira simples e eficiente.">
+    <meta name="description"
+        content="Motor Seguros é um projeto desenvolvido para a disciplina de Programação Web, que visa criar um site de seguros para carros e motos. Este site permite ao utilizador visualizar e contratar seguros de maneira simples e eficiente.">
     <meta name="keywords" content="seguros, seguro para carro, seguro para mota, seguro para veiculo, seguro automóvel">
     <meta name="author" content="@guilhermelouro, @miguellobato96, @kalebeccs, @rafadegus">
 
     <meta property="og:title" content="Motor Seguros">
-    <meta property="og:description" content="Motor Seguros é um projeto desenvolvido para a disciplina de Programação Web, que visa criar um site de seguros para carros e motos. Este site permite ao utilizador visualizar e contratar seguros de maneira simples e eficiente.">
+    <meta property="og:description"
+        content="Motor Seguros é um projeto desenvolvido para a disciplina de Programação Web, que visa criar um site de seguros para carros e motos. Este site permite ao utilizador visualizar e contratar seguros de maneira simples e eficiente.">
     <meta property="og:site_name" content="motorseguros.pt">
     <meta property="og:url" content="https://motorseguros.pt/">
     <meta property="og:type" content="website">
@@ -110,7 +114,7 @@
     <main class="main container main__contact ">
 
         <h2 class="contact__title">Contact Us</h2>
-        
+
         <section class="contact__info">
             <div class="info__content">
                 <div class="info__group">
@@ -124,17 +128,19 @@
                     <i class="ri-mail-line info__icon"></i>
                     <div class="info__group-text">
                         <p class="info__paragraph">Email</p>
-                        <a class="info__link" href="mailto:motor.seguros.ipluso@gmail.com">motor.seguros.ipluso@gmail.com</a>
+                        <a class="info__link"
+                            href="mailto:motor.seguros.ipluso@gmail.com">motor.seguros.ipluso@gmail.com</a>
                     </div>
                 </div>
                 <div class="info__group">
                     <i class="ri-home-2-line info__icon"></i>
                     <div class="info__group-text">
                         <p class="info__paragraph">Address</p>
-                        <a class="info__link" href="https://maps.app.goo.gl/8DLYvCBKG6TsqVX36">Campo Grande 400, 1700-098 Lisboa</a>
+                        <a class="info__link" href="https://maps.app.goo.gl/8DLYvCBKG6TsqVX36">Campo Grande 400,
+                            1700-098 Lisboa</a>
                     </div>
                 </div>
-                
+
                 <table class="info__table">
                     <thead>
                         <tr>
@@ -164,25 +170,27 @@
         </section>
 
         <section>
-            <form class="contact__form" action="">
+            <form class="contact__form" id="contact-form" action="">
                 <h3 class="form__title">Send us a message</h3>
                 <div class="form__group">
                     <label class="form__label" for="name">Name</label>
-                    <input class="form__input" id="name" type="text" placeholder="First Name">
+                    <input class="form__input" id="contact-name" name="user_name" type="text" placeholder="Type your Name" required>
                 </div>
                 <div class="form__group">
                     <label class="form__label" for="email">Email</label>
-                    <input class="form__input" id="email" type="email" placeholder="Email Address">
+                    <input class="form__input" id="contact-email" name="user_email" type="email" placeholder="Enter with your Email Address" required>
                 </div>
                 <div class="form__group">
                     <label class="form__label" for="subject">Subject</label>
-                    <input class="form__input" id="subject" type="text" placeholder="Subject">
+                    <input class="form__input" id="contact-subject" name="user_subject" type="text" placeholder="What is the subject?"
+                        required>
                 </div>
                 <div class="form__group">
                     <label class="form__label" for="message">Message</label>
-                    <textarea class="form__area" id="message" placeholder="Message"></textarea>
+                    <textarea class="form__area" id="contact-message" name="user_message" placeholder="Type here..." required></textarea>
                 </div>
-                <button class="form__button" type="submit">Send</button>
+                <button class="form__button" type="contact-submit">Send</button>
+                <span class="form__status" id="contact-status"></span>
             </form>
         </section>
     </main>

@@ -196,6 +196,10 @@
     box-shadow: 0 2px 16px hsla(230, 75%, 32%, .15);
 }
 
+.form__status{
+    text-align: center;
+}
+
 @media screen and (max-width: 576px) {
     .contact__form{
         width: 100%;
