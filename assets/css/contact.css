@@ -1,12 +1,112 @@
-.main__contact{
-    display: flex;
-    column-gap: 5rem;
-    justify-content: center;
-    padding: 3rem 1.5rem;
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
-.contact__infos{
+.main__contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 1500px;
+}
+
+.contact__infos {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 2rem;
+}
+
+.contact__infos h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.contact__infos p {
+    font-weight: bold;
+}
+
+.contact__infos a {
+    color: #0066cc;
+}
+
+.contact__infos a:hover {
+    text-decoration: underline;
+}
+
+.contact__infos table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.contact__infos th,
+.contact__infos td {
+    padding: 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact__infos {
+    flex: 1;
+    min-width: 00px;
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+}
+
+.contact__infos h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.contact__infos input,
+.contact__infos textarea {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact__infos input:focus,
+.contact__infos textarea:focus {
+    border-color: #0066cc;
+    outline: none;
+}
+
+.contact__infos button {
+    padding: 0.75rem;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact__infos button:hover {
+    background-color: #005bb5;
+}
+
+.map__responsive{
+    position: relative;
+    width: 40%;
+    margin-top: 13em;
+    padding-bottom: 60.25%; 
+    height: 0;
+}
+
+.map__responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 78%;
+    border: 0;
 }
