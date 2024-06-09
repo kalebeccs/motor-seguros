@@ -91,13 +91,6 @@
     align-items: center;
 }
 
-/* <<<<<<< HEAD */
-form input,
-form textarea {
-    padding: 0.75rem;
-    border: 1px solid #ddd;
-}
-/* ======= */
 .table__rows{
     display: flex;
     flex-direction: column;
@@ -130,7 +123,6 @@ form textarea {
 }
 
 .map__iframe {
-/* >>>>>>> 465f5e503b5ca146a0fa427a206f3773da7b7ad0 */
     width: 100%;
     height: 30rem;
     border: 1px solid lightgray;
