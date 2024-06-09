@@ -9,7 +9,11 @@
         
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="./assets/css/styles.css">
-    
+
+        <!--=============== SWIPER =============-->
+        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+        <script src="./assets/js/swiper-bundle.min.js" defer></script>
+   
         <!--=============== JS ===============-->
         <script src="./assets/js/header.js" defer></script>
         <script src="./assets/js/main.js" defer></script>
@@ -105,14 +109,42 @@
 
         <i class="ri-close-line login__close" id="login-close"></i>
      </div>
+     <section class="carousel">
+        <div class="card__container swiper">
+            <div class="card__content">
+                <div class="swiper-wrapper">
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="./assets/img/Generic_1.jpg" alt="image" class="card__img">
+                        </div>
 
-    <main class="main main__pb">
-        <section class="carousel">
-            <div>
-                <h2>Image Carousel</h2>
-                <img src="" alt="image">
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="./assets/img/Generic2.jpg" alt="image" class="card__img">
+                        </div>
+
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="./assets/img/Generic3.jpg" alt="image" class="card__img">
+                        </div>
+
+                    </article>
+                </div>
             </div>
-        </section>
+            <!----- Navigation Buttons----->
+            <div class="swiper-button-prev">
+                <i class="ri-arrow-left-s-line"></i>
+            </div>
+            <div class="swiper-button-next">
+                <i class="ri-arrow-rigth-s-line"></i>
+            </div>
+        </div>
+    </section>
+    <main class="main main__pb">
         <section class="benefits">
             <h2>Benefits</h2>
             <div class="benefits__list">

@@ -7,14 +7,16 @@
 
     <!--=============== REMIXICONS ===============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
-    
+
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./assets/css/styles.css">
 
     <!--=============== JS ===============-->
     <script src="./assets/js/header.js" defer></script>
     <script src="./assets/js/main.js" defer></script>
-    
+    <script src="./assets/js/email.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+
     <!--=============== TITLE AND ICON ===============-->
     <title>Contact | Motor Seguros</title>
     <link rel="shortcut icon" href="./assets/img/images.ico" type="image/x-icon">
@@ -32,153 +34,167 @@
     <meta property="og:url" content="https://motorseguros.pt/">
     <meta property="og:type" content="website">
     <meta property="og:image" content="">
-
 </head>
 
 <body>
     <header class="header" id="header">
         <nav class="nav container">
-           <a href="./index.html" class="nav__logo">Logo</a>
+            <a href="./index.html" class="nav__logo">Logo</a>
 
-           <div class="nav__menu" id="nav-menu">
-              <ul class="nav__list">
-                 <li class="nav__item">
-                    <a href="./index.html" class="nav__link">Home</a>
-                 </li>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link">Home</a>
+                    </li>
 
-                 <li class="nav__item">
-                    <a href="./insurance-and-simulation.html" class="nav__link">Insurance <br>& Simulation</a>
-                 </li>
+                    <li class="nav__item">
+                        <a href="./insurance-and-simulation.html" class="nav__link">Insurance <br>& Simulation</a>
+                    </li>
 
-                 <li class="nav__item">
-                    <a href="./promotion-and-benefits.html" class="nav__link">Promotion <br>& Benefits</a>
-                 </li>
+                    <li class="nav__item">
+                        <a href="./promotion-and-benefits.html" class="nav__link">Promotion <br>& Benefits</a>
+                    </li>
 
-                 <li class="nav__item">
-                    <a href="#" class="nav__link active">Contact</a>
-                 </li>
-              </ul>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link active">Contact</a>
+                    </li>
+                </ul>
 
-              <!-- Close button -->
-              <div class="nav__close" id="nav-close">
-                 <i class="ri-close-line"></i>
-              </div>
-           </div>
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
 
-           <div class="nav__actions">
-              <!-- Login button -->
-              <i class="ri-user-line nav__login" id="login-btn"></i>
+            <div class="nav__actions">
+                <!-- Login button -->
+                <i class="ri-user-line nav__login" id="login-btn"></i>
 
-              <!-- Toggle button -->
-              <div class="nav__toggle" id="nav-toggle">
-                 <i class="ri-menu-line"></i>
-              </div>
-           </div>
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
         </nav>
-     </header>
+    </header>
 
-     <!--==================== LOGIN ====================-->
-     <div class="login" id="login">
+    <!--==================== LOGIN ====================-->
+    <div class="login" id="login">
         <form action="" class="login__form">
-           <h2 class="login__title">Log In</h2>
+            <h2 class="login__title">Log In</h2>
 
-           <div class="login__group">
-              <div>
-                 <label for="email" class="login__label">Email</label>
-                 <input type="email" placeholder="Write your email" id="email" class="login__input">
-              </div>
+            <div class="login__group">
+                <div>
+                    <label for="email" class="login__label">Email</label>
+                    <input type="email" placeholder="Write your email" id="email" class="login__input">
+                </div>
 
-              <div>
-                 <label for="password" class="login__label">Password</label>
-                 <input type="password" placeholder="Enter your password" id="password" class="login__input">
-              </div>
-           </div>
+                <div>
+                    <label for="password" class="login__label">Password</label>
+                    <input type="password" placeholder="Enter your password" id="password" class="login__input">
+                </div>
+            </div>
 
-           <div>
-              <p class="login__signup">
-                 You do not have an account? <a href="#">Sign up</a>
-              </p>
+            <div>
+                <p class="login__signup">
+                    You do not have an account? <a href="#">Sign up</a>
+                </p>
 
-              <a href="#" class="login__forgot">
-                 You forgot your password
-              </a>
+                <a href="#" class="login__forgot">
+                    You forgot your password
+                </a>
 
-              <button type="submit" class="login__button">Log In</button>
-           </div>
+                <button type="submit" class="login__button">Log In</button>
+            </div>
         </form>
 
         <i class="ri-close-line login__close" id="login-close"></i>
-     </div>
+    </div>
 
-    <main class="main main__contact">
-        <div class="contact__infos">
-            <h2>Contact Us</h2>
-            <div>
-            <p>Nº Telefone:</p><a href="tel:123456789">123 456 789</a><br>
-                <p>Email:</p><a href="mailto:motor.seguros.ipluso@gmail.com">motor.seguros.ipluso@gmail.com</a><br>
-                    <p>Address:</p><a href="https://www.google.com/maps/place/Campo+Grande+400,+Lisboa/@38.7597299,-9.1585452,17z/data=!3m1!4b1!4m6!3m5!1s0xd1932fb45fa2c87:0xc2b0b7608fc383d4!8m2!3d38.7597257!4d-9.1559703!16s%2Fg%2F11f6dcmv_5?hl=pt-PT&entry=ttu">Campo Grande 400, 1700-098 Lisboa</a>
-                <table>
-                    <tr>
-                        <th>Opening Hours:</th>
-                    </tr>
-                    <tr>
-                        <td>Monday</td>
-                        <td>8:00-18:00</td>
-                    </tr>
-                    <tr>
-                        <td>Tuesday</td>
-                        <td>8:00-18:00</td>
-                    </tr>
-                    <tr>
-                        <td>Wednesday</td>
-                        <td>8:00-18:00</td>
-                    </tr>
-                    <tr>
-                        <td>Thursday</td>
-                        <td>8:00-18:00</td>
-                    </tr>
-                    <tr>
-                        <td>Friday</td>
-                        <td>8:00-18:00</td>
-                    </tr>
-                    <tr>
-                        <td>Saturday</td>
-                        <td>Closed</td>
-                    </tr>
-                    <tr>
-                        <td>Sunday</td>
-                        <td>Closed</td>
-                    </tr>
+    <main class="main container main__contact ">
+
+        <h2 class="contact__title">Contact Us</h2>
+
+        <section class="contact__info">
+            <div class="info__content">
+                <div class="info__group">
+                    <i class="ri-phone-line info__icon"></i>
+                    <div class="info__group-text">
+                        <p class="info__paragraph">Nº Telefone</p>
+                        <a class="info__link" href="tel:123456789">123 456 789</a>
+                    </div>
+                </div>
+                <div class="info__group">
+                    <i class="ri-mail-line info__icon"></i>
+                    <div class="info__group-text">
+                        <p class="info__paragraph">Email</p>
+                        <a class="info__link"
+                            href="mailto:motor.seguros.ipluso@gmail.com">motor.seguros.ipluso@gmail.com</a>
+                    </div>
+                </div>
+                <div class="info__group">
+                    <i class="ri-home-2-line info__icon"></i>
+                    <div class="info__group-text">
+                        <p class="info__paragraph">Address</p>
+                        <a class="info__link" href="https://maps.app.goo.gl/8DLYvCBKG6TsqVX36">Campo Grande 400,
+                            1700-098 Lisboa</a>
+                    </div>
+                </div>
+
+                <table class="info__table">
+                    <thead>
+                        <tr>
+                            <th class="table__title" colspan="2">
+                                <i class="ri-time-line info__icon-time"></i>
+                                Opening Hours
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="table__rows">
+                        <tr class="table__row">
+                            <td>Monday-Friday</td>
+                            <td>8:00 - 18:00</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td>Saturday-Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
-            <form action="">
-                <h3>Contact Form</h3>
-                <div>
-                    <label for="name">Name:</label>
-                    <input id="name" type="text" placeholder="First Name">
+            <div class="info__map">
+                <iframe class="map__iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.1679796737435!2d-9.158100223528614!3d38.75985105480755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1933843c8532a3%3A0xd93296749817b174!2sIPLUSO%20-%20Instituto%20Polit%C3%A9cnico%20da%20Lusofonia!5e0!3m2!1spt-PT!2spt!4v1717268693821!5m2!1spt-PT!2spt"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section>
+            <form class="contact__form" id="contact-form" action="">
+                <h3 class="form__title">Send us a message</h3>
+                <div class="form__group">
+                    <label class="form__label" for="name">Name</label>
+                    <input class="form__input" id="contact-name" name="user_name" type="text" placeholder="Type your Name" required>
                 </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input id="email" type="email" placeholder="Email Address">
+                <div class="form__group">
+                    <label class="form__label" for="email">Email</label>
+                    <input class="form__input" id="contact-email" name="user_email" type="email" placeholder="Enter with your Email Address" required>
                 </div>
-                <div>
-                    <label for="subject">Subject:</label>
-                    <input id="subject" type="text" placeholder="Subject">
+                <div class="form__group">
+                    <label class="form__label" for="subject">Subject</label>
+                    <input class="form__input" id="contact-subject" name="user_subject" type="text" placeholder="What is the subject?"
+                        required>
                 </div>
-                <div>
-                    <label for="message">Message:</label>
-                    <textarea id="message" placeholder="Message"></textarea>
+                <div class="form__group">
+                    <label class="form__label" for="message">Message</label>
+                    <textarea class="form__area" id="contact-message" name="user_message" placeholder="Type here..." required></textarea>
                 </div>
-                <br>
-                <button type="submit">Send</button>
+                <button class="form__button" type="contact-submit">Send</button>
+                <span class="form__status" id="contact-status"></span>
             </form>
-        </div>
-        <div class="map__responsive">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.1679796737435!2d-9.158100223528614!3d38.75985105480755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1933843c8532a3%3A0xd93296749817b174!2sIPLUSO%20-%20Instituto%20Polit%C3%A9cnico%20da%20Lusofonia!5e0!3m2!1spt-PT!2spt!4v1717268693821!5m2!1spt-PT!2spt"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        </section>
     </main>
+
     <footer class="footer">
         <a href="mailto:#">Email</a>
         <span>&copy; Copyright</span>

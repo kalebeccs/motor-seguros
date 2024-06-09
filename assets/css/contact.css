@@ -1,111 +1,215 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
-
 .main__contact {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 3em;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 2rem auto;
-    max-width: 1500px;
+    flex-direction: column;
+    row-gap: 3rem;
+    padding-block: 3rem;
 }
 
-.contact__infos {
-    flex: 1;
-    min-width: 300px;
-    margin-right: 2rem;
-}
-
-.contact__infos h2 {
+.contact__title{
     text-align: center;
     color: #333;
-    margin-bottom: 1em;
+    font-size: 1.75rem;
 }
 
-.contact__infos p {
+@media screen and (max-width: 576px) {
+    .main__contact{
+        row-gap: 2rem;
+        padding-block: 2rem;
+    }
+    .contact__title{
+        font-size: 1.5rem;
+    }
+}
+/* ==============INFO============== */
+.contact__info{
+    display: flex;
+    column-gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.info__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1.5rem;
+}
+
+.info__group{
+    display: flex;
+    column-gap: .75rem;
+    align-items: center;
+}
+
+.info__icon{
+    font-size: 1.5rem;
+}
+
+.info__icon-time{
+    font-size: 1.5rem;
+}
+
+.info__paragraph {
     font-weight: bold;
 }
 
-.contact__infos a {
+.info__link {
     color: #0066cc;
 }
 
-.contact__infos a:hover {
+.info__link:hover {
     text-decoration: underline;
 }
 
-.contact__infos table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1rem 0;
+@media screen and (max-width: 1024px) {
+    .contact__info{
+        flex-direction: column;
+        width: 500px;
+        margin-inline: auto;
+        row-gap: 1.5rem;
+    }
+    .info__content{
+        margin-inline: auto;
+    }
 }
 
-.contact__infos th,
-.contact__infos td {
-    padding: 0.5rem;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+@media screen and (max-width: 576px) {
+    .contact__info{
+        width: 100%;
+    }
 }
 
-form {
-    flex: 1;
-    min-width: 00px;
+
+/* ==============TABLE============== */
+.info__table {
     display: flex;
     flex-direction: column;
 }
 
-form h3 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 1rem;
+.table__title{
+    display: flex;
+    column-gap: .75rem;
+    align-items: center;
 }
 
+/* <<<<<<< HEAD */
 form input,
 form textarea {
     padding: 0.75rem;
     border: 1px solid #ddd;
+}
+/* ======= */
+.table__rows{
+    display: flex;
+    flex-direction: column;
+    row-gap: .25rem;
+    margin-left: 2.45rem;
+}
+
+.table__row{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+    .table__rows{
+        width: 17rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .table__rows{
+        width: initial;
+    }
+}
+
+/* ==============MAP============== */
+.info__map{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.map__iframe {
+/* >>>>>>> 465f5e503b5ca146a0fa427a206f3773da7b7ad0 */
     width: 100%;
-    box-sizing: border-box;
+    height: 30rem;
+    border: 1px solid lightgray;
+    border-radius: .25rem;
+    box-shadow: 0 2px 16px hsla(230, 75%, 32%, .15);
 }
 
-form input:focus,
-form textarea:focus {
+@media screen and (max-width: 1024px) {
+    .map__iframe{
+        height: 25rem;
+    }
+}
+
+/* ==============FORM============== */
+.contact__form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    margin-inline: auto;
+}
+
+.form__title{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.form__group{
+    display: flex;
+    flex-direction: column;
+    row-gap: .25rem;
+}
+
+.form__label{
+    font-weight: bold;
+}
+
+.form__input,
+.form__area {
+    padding: .75rem 1.25rem;
+    border: 1px solid #ddd;
+    border-radius: .25rem;
+}
+
+.form__area{
+    resize: none;
+    height: 10rem;
+}
+
+.form__input:focus,
+.form__area:focus {
     border-color: #0066cc;
-    outline: none;
+    box-shadow: 0 2px 16px hsla(230, 75%, 32%, .15);
 }
 
-form button {
-    padding: 0.75rem;
+.form__button {
+    padding: 1rem;
+    width: 80%;
+    margin-inline: auto;
     background-color: #0066cc;
     color: white;
-    border: none;
-    border-radius: 4px;
+    font-weight: bold;
+    border-radius: .25rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color .3s;
 }
 
-form button:hover {
+.form__button:hover {
     background-color: #005bb5;
+    box-shadow: 0 2px 16px hsla(230, 75%, 32%, .15);
 }
 
-.map__responsive{
-    position: relative;
-    width: 40%;
-    margin-top: 13em;
-    padding-bottom: 60.25%; 
-    height: 0;
+.form__status{
+    text-align: center;
 }
 
-.map__responsive iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 78%;
-    border: 0;
+@media screen and (max-width: 576px) {
+    .contact__form{
+        width: 100%;
+    }
 }
