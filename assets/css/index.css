@@ -4,3 +4,31 @@
     row-gap: 8rem;
     padding: 3rem 1.5rem;
 }
+
+.advert {
+    position: relative;
+    min-height: 40em; 
+    width: 100%;
+}
+
+.advert__imagebg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url("../img/Seguro-Motores.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    height: 100%; 
+    width: 100%; 
+    overflow: hidden; 
+}
+
+.advert__text {
+    position: relative;
+    color: red;
+    z-index: 1; 
+}
