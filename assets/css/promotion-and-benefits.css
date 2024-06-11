@@ -47,17 +47,21 @@
  z-index: 5;
 }
 /* Swiper Class */
-.swiper-button-prev::after,
-.swiper-button-next::after{
-    content: '';
-}
+
 .swiper-button-next,
 .swiper-button-prev{
-    width: initial;
-    height: initial;
+    width: 45px;
+    height: 45px;
     font-size: 3rem;
-    color: var(--c2);
-    display: none;
+    color: white;
+    border-radius:50%;
+    margin: 3%;
+    background-color: bisque; 
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }    
 .swiper-button-prev{
     left: 0;
@@ -65,23 +69,84 @@
 .swiper-button-next{
     right: 0;
 }
+.swiper-button-next::after{
+    font-size: 1.8rem;
+    padding-left: 4px;
+}
+.swiper-button-next:hover{
+    background-color: black;
+}
+.swiper-button-prev::after{
+    font-size: 1.8rem;
+    padding-right: 4px;
+}
+.swiper-button-prev:hover{
+    background-color: black;
+}
 .ri-arrow-left-s-line::before{
     content: '';
 }
-    
-
-/* ------------------------- */
+.ri-arrow-rigth-s-line::before{
+    content: '';
+}
+/* -------------- BENEFITS ----------- */
 .benefits,
-.promotions{
+.promotions{ 
     text-align: center;
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
 }
+.benefits__container{
+    padding-block: 5rem;
+    display: flex;
+    justify-content: center; /*centra horizontalmente*/
+    align-items: center;    /*centra verticalmente*/
+    gap:3rem;
+}
+.benefits__img{
+    display: flex;
+}
+.seguro__img{
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    border-radius: 50%;
+}
 
-.benefits__list,
-.promotions__list{
+.benefits__list                         
+.promotions__list{               /* ver onde deixar a list */
     display: flex;
     justify-content: center;
     column-gap: 3rem;
 }
+/* ---------- PROMOTIONS -------------*/
+.promotions__list{
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+    border-collapse: collapse;
+    border: 2px;
+    letter-spacing: 1px;
+}
+/* .planos{
+     background-color: var(--first-color); 
+    
+} */
+
+.th{
+    border: 2px solid rgb(160 160 160);
+    padding: 8px 10px;
+    text-align: center;
+
+}
+.td{
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+    text-align: center;
+}
+tbody .th{
+    text-align: left;
+}
+
+
