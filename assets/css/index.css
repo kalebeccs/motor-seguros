@@ -45,3 +45,15 @@
     color: black;
     text-decoration: none;
 }
+
+.card__text {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.carousel__home {
+    background-color: rgb(205, 174, 0);
+    border-radius: 7%;
+    padding: 2em;
+}
