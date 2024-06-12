@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     row-gap: 8rem;
-    padding: 3rem 1.5rem;
 }
 
 .advert {
@@ -29,6 +28,20 @@
 
 .advert__text {
     position: relative;
-    color: red;
+    color: black;
     z-index: 1; 
+    text-align: center;
+    font-weight: bold;
+    font-size: 5em;
+    padding: 1.2em;
+}
+
+.advert__redirect {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
 }
