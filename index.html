@@ -5,6 +5,10 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+   <!--=============== SWIPER =============-->
+   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+   <script src="./assets/js/swiper-bundle.min.js" defer></script>
+
    <!--=============== REMIXICONS ===============-->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
@@ -14,7 +18,6 @@
    <!--=============== JS ===============-->
    <script src="./assets/js/header.js" defer></script>
    <script src="./assets/js/main.js" defer></script>
-
    <!--=============== TITLE AND ICON ===============-->
    <title>Home | Motor Seguros</title>
    <link rel="shortcut icon" href="./assets/img/images.ico" type="image/x-icon">
@@ -112,18 +115,48 @@
          banner welcome
          <img src="" alt="image">
       </section>
-      <section class="reviews">
-         <h2>customer comment</h2>
-         <p>lorem ipsum</p>
-      </section>
+      <section class="carousel__home">
+         <div class="card__container swiper">
+            <div class="card__content">
+               <div class="swiper-wrapper">
+                     <article class="card__article swiper-slide">
+                         <div class="card__text">
+                        <p> Simpatia e preço. Já foi necessário solicitar, tanto a assistência em viagem como a quebra de vidros, e não tive qualquer problema. <br>
+                            Daniel, Mar. 2023</p>
+                            <img src="../assets/img/Reviweres/daniel.webp" alt="daniel" style="width: 50px; border-radius: 80%;">
+                           </div>
+                      </article>
+                     <article class="card__article swiper-slide">
+                        <div class="card__text">
+                       <p>  Pela rapidez, eficiência, responsabilidade nos trabalhos que executam. Parabéns e continuem sempre assim! <br>
+                            Isabel, Mar. 2023</p>
+                        </div>
+                    </article>
+                    <article class="card__article swiper-slide">
+                     <div class="card__text">
+                    <p>    Sou cliente de Motores Seguros há algum tempo, o serviço é muito bom, tem uma aplicação que funciona muito bem em caso de acidente. <br>
+                           Domingos, Mar. 2023</p>
+                         </div>
+                 </article>
+                 </div>
+             </div>
+            </div>
+             <!----- Navigation Buttons----->
+             <div class="swiper-button-prev">
+                 <i class="ri-arrow-left-s-line"></i>
+             </div>
+             <div class="swiper-button-next">
+                 <i class="ri-arrow-rigth-s-line"></i>
+             </div>
+         </div>
+     </section>
       <section class="advert">
          <div class="advert__imagebg"> </div>
          <div class = "advert__text">
-            Colocar um blur no Imagem
-            Texto chamativo
-            --------------------------------------------------------
-            Com um link para a página: promotion-and-benefits.html
+      EXISTEM IMENSAS PROMOÇÕES À SUA ESPERA!
          </div>
+         <div class="advert__redirect">
+            <a href="promotion-and-benefits.html">CLIQUE PARA IR PARA A PÁGINA DAS PROMOÇÕES!</a>
       </section>
    </main>
    <footer class="footer">
@@ -136,10 +169,3 @@
 </body>
 
 </html>
-
-
-<!-- <section>
-   promotion block <br>
-   <a href="#">call to action</a> 
-   <button>call to action</button>
-</section> -->
