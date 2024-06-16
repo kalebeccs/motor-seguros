@@ -132,14 +132,7 @@
 
 .login__group{
   row-gap: 1rem;
-}
-
-.login__label{
-  display: block;
-  text-align: initial;
-  color: var(--title-color);
-  font-weight: var(--font-medium);
-  margin-bottom: .25rem;
+  position: relative;
 }
 
 .login__input{
@@ -151,25 +144,59 @@
   color: var(--text-color);
 }
 
-.login__input::placeholder{
-  color: var(--text-color);
+.login__label{
+  display: block;
+  text-align: initial;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  margin-bottom: .25rem;
+  position: absolute;
+  left: 15px;
+  pointer-events: none;
+  transform: translateY(18px);
+  font-size: var(--h3-font-size);
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.login__signup{
+/* Login form ANIMATIONS */
+.login__input:focus { 
+  outline: none;
+  border: 2px solid var(--first-color);
+}
+
+input:valid{
+  
+}
+
+.login__input:focus ~ label {
+  transform: translateX(-10%) translateY(-50%) scale(0.9);
+  background-color: var(--container-color);
+  padding: 0.2rem;
+  color: var(--first-color)
+}
+
+input:valid ~ label {
+  transform: translateX(-10%) translateY(-50%) scale(0.9);
+  padding: 0.2rem;
+  background-color: var(--container-color);
+}
+
+/* ---------------------- */
+.login__signup {
   margin-bottom: .5rem;
 }
 
-.login__signup a{
+.login__signup a {
   color: var(--first-color);
 }
 
-.login__forgot{
+.login__forgot {
   display: inline-block;
   color: var(--first-color);
   margin-bottom: 1.25rem;
 }
 
-.login__button{
+.login__button {
   display: inline-block;
   background-color: var(--first-color);
   width: 100%;
@@ -181,17 +208,17 @@
   transition: box-shadow .4s;
 }
 
-.login__button:hover{
+.login__button:hover {
   box-shadow: 0 4px 24px hsla(230, 75%, 40%, .4);
 }
 
 /* Show login */
-.show-login{
+.show-login {
   opacity: 1;
   pointer-events: initial;
 }
 
-.show-login .login__form{
+.show-login .login__form {
   transform: translateY(0);
 }
 
