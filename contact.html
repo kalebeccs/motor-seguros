@@ -81,35 +81,32 @@
     <!--==================== LOGIN ====================-->
     <div class="login" id="login">
         <form action="" class="login__form">
-            <h2 class="login__title">Log In</h2>
-
-            <div class="login__group">
-                <div>
-                    <label for="email" class="login__label">Email</label>
-                    <input type="email" placeholder="Write your email" id="email" class="login__input">
-                </div>
-
-                <div>
-                    <label for="password" class="login__label">Password</label>
-                    <input type="password" placeholder="Enter your password" id="password" class="login__input">
-                </div>
-            </div>
-
-            <div>
-                <p class="login__signup">
-                    You do not have an account? <a href="#">Sign up</a>
-                </p>
-
-                <a href="#" class="login__forgot">
-                    You forgot your password
-                </a>
-
-                <button type="submit" class="login__button">Log In</button>
-            </div>
+           <h2 class="login__title">Log In</h2>
+    
+           <div class="login__group"> 
+              <input type="text" name="email" id="email" class="login__input" required>
+              <label for="email" class="login__label">Email</label>
+           </div>
+           <div class="login__group">
+              <input type="password" id="password" class="login__input" required>
+              <label for="password" class="login__label">Password</label>
+           </div>
+                 
+           <div>
+              <p class="login__signup">
+                 You do not have an account? <a href="#">Sign up</a>
+              </p>
+    
+              <a href="#" class="login__forgot">
+                 You forgot your password
+              </a>
+    
+              <button type="submit" class="login__button">Log In</button>
+           </div>
         </form>
-
+    
         <i class="ri-close-line login__close" id="login-close"></i>
-    </div>
+     </div>
 
     <main class="main container main__contact ">
 
@@ -173,21 +170,21 @@
             <form class="contact__form" id="contact-form" action="">
                 <h3 class="form__title">Send us a message</h3>
                 <div class="form__group">
-                    <label class="form__label" for="name">Name</label>
                     <input class="form__input" id="contact-name" name="user_name" type="text" placeholder="Type your Name" required>
+                    <label class="form__label" for="name">Name</label>
                 </div>
                 <div class="form__group">
-                    <label class="form__label" for="email">Email</label>
                     <input class="form__input" id="contact-email" name="user_email" type="email" placeholder="Enter with your Email Address" required>
+                    <label class="form__label" for="email">Email</label>
                 </div>
                 <div class="form__group">
-                    <label class="form__label" for="subject">Subject</label>
                     <input class="form__input" id="contact-subject" name="user_subject" type="text" placeholder="What is the subject?"
                         required>
+                    <label class="form__label" for="subject">Subject</label>
                 </div>
                 <div class="form__group">
-                    <label class="form__label" for="message">Message</label>
                     <textarea class="form__area" id="contact-message" name="user_message" placeholder="Type here..." required></textarea>
+                    <label class="form__label" for="message">Message</label>
                 </div>
                 <button class="form__button" type="contact-submit">Send</button>
                 <span class="form__status" id="contact-status"></span>
