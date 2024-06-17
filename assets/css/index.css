@@ -53,7 +53,21 @@
 }
 
 .carousel__home {
-    background-color: rgb(205, 174, 0);
-    border-radius: 7%;
-    padding: 2em;
+    background-color: var(--first-color);
+    color: white;
+    margin-left: 5em;
+    margin-right: 5em;
+    box-shadow: 0 2px 16px hsla(0, 0%, 0%, 0.6);
+}
+
+.card__author {
+    margin-top: 0.4em;
+    margin-left: 26em;    
+}
+
+.author__text{
+    font-size: 0.7em;
+    color: black;
+    font-weight: bold;
+    margin-right: 0.1em;
 }
