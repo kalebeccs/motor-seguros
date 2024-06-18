@@ -100,13 +100,11 @@
 .benefits__container{
     padding-block: 5rem;
     display: flex;
-    justify-content: center; /*centra horizontalmente*/
-    align-items: center;    /*centra verticalmente*/
+    justify-content: center; 
+    align-items: center;    
     gap:3rem;
 }
-.benefits__img{
-    display: flex;
-}
+
 .seguro__img{
     width: 15rem;
     height: 15rem;
@@ -115,11 +113,27 @@
 }
 
 .benefits__list                         
-.promotions__list{               /* ver onde deixar a list */
+.promotions__list{               
     display: flex;
     justify-content: center;
     column-gap: 3rem;
 }
+
+.benefit__img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+
+}
+
+.benefit__icon {
+    font-size: 3rem;
+    height: 3rem;
+    width: 3rem;
+    
+}
+
 /* ---------- PROMOTIONS -------------*/
 .promotions__list{
     display: flex;
@@ -133,18 +147,34 @@
      background-color: var(--first-color); 
     
 } */
-
+/* .ps{
+    background-color: var(--c1);
+    color:var(--darkblue);
+}
+.pp{
+    background-color: var(--c1);
+    color:var(--darkblue);
+}
+.pv{
+    background-color: var(--c1);
+    color:var(--darkblue);
+} */
 .th{
     border: 2px solid rgb(160 160 160);
     padding: 8px 10px;
     text-align: center;
-
+    background-color: var(--c1);
+    color:var(--darkblue);
 }
+
 .td{
     border: 1px solid rgb(160 160 160);
     padding: 8px 10px;
     text-align: center;
+    background-color: var(--c2-hover);
+    color:var(--darkblue);
 }
+
 tbody .th{
     text-align: left;
 }

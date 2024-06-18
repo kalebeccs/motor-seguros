@@ -8,9 +8,14 @@ let swiperCards = new Swiper('.card__content', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+
+    autoplay: {   //native from Swiper library
+        delay: 3000,
+        disableOnInteraction: false, 
+    }
 });
 
-/*=============== SWIPER INDEX ===============*/
+    /*=============== SWIPER INDEX ===============*/
 let swiperCards2 = new Swiper('.comment__content', {
     loop: true,
     spaceBetween: 0,
@@ -20,4 +25,5 @@ let swiperCards2 = new Swiper('.comment__content', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+
 });
