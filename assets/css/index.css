@@ -4,17 +4,62 @@
     row-gap: 8rem;
 }
 
-.advert {
-    position: relative;
-    min-height: 40em; 
-    width: 100%;
+/*=============== COMMENT ===============*/
+
+.comment {
+    border-radius: .5rem;
+    box-shadow: 4px 4px 16px var(--c5);
 }
 
-.advert__imagebg {
+.comment__article{
+    display: flex;
+    color: var(--c6);
+    height: initial;
+}
+
+.article__author{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 3rem;
+    border-right: 4px solid var(--c5);
+    border-radius: .5rem 0 0 .5rem;
+    background-color: var(--c2);
+}
+
+.article__author__img{
+    width: 13rem;
+    border-radius: 50%;
+    box-shadow: 0px 4px 16px var(--c3);
+}
+
+.article__author__name{
+    text-align: center;
+    min-width: 4.875rem;
+    font-weight: 600;
+}
+
+.article__text{
+    display: flex;
+    align-items: center;
+    background-color: var(--container-color);
+    border-radius: 0 .5rem .5rem 0;
+    padding: 3rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*=============== ADVERT ===============*/
+
+.advert {
+    position: relative;
+}
+
+.advert__bg {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
     background-image: url("../img/Seguro-Motores.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,50 +69,33 @@
     height: 100%; 
     width: 100%; 
     overflow: hidden; 
+    z-index: -1;
 }
 
-.advert__text {
-    position: relative;
-    color: black;
-    z-index: 1; 
-    text-align: center;
+.advert__content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    align-items: center;
+    padding-block: 10rem;
+}
+
+.advert__title {
+    color: var(--c2);
+    font-size: 2rem;
+    text-shadow: 4px 4px 32px var(--black-color);
+}
+
+.advert__link {
+    background-color: var(--c2);
+    color: var(--c3);
     font-weight: bold;
-    font-size: 5em;
-    padding: 1.2em;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 4px 4px 32px var(--black-color);
+    transition: background-color .3s;
 }
 
-.advert__redirect {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    font-size: 3em;
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
-}
-
-.card__text {
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.carousel__home {
-    background-color: var(--first-color);
-    color: white;
-    margin-left: 5em;
-    margin-right: 5em;
-    box-shadow: 0 2px 16px hsla(0, 0%, 0%, 0.6);
-}
-
-.card__author {
-    margin-top: 0.4em;
-    margin-left: 26em;    
-}
-
-.author__text{
-    font-size: 0.7em;
-    color: black;
-    font-weight: bold;
-    margin-right: 0.1em;
+.advert__link:hover{
+    background-color: var(--c2-hover);
 }

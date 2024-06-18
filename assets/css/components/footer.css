@@ -1,6 +1,9 @@
-.footer{
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid var(--black-color);
-    padding: 1.5rem;
-  }
+.footer {
+  border-top: 1px solid var(--black-color);
+  padding: 1.5rem;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+}

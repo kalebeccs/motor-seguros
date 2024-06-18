@@ -84,8 +84,8 @@
    <div class="login" id="login">
       <form action="" class="login__form">
          <h2 class="login__title">Log In</h2>
-  
-         <div class="login__group"> 
+
+         <div class="login__group">
             <input type="text" name="email" id="email" class="login__input" required>
             <label for="email" class="login__label">Email</label>
          </div>
@@ -93,81 +93,88 @@
             <input type="password" id="password" class="login__input" required>
             <label for="password" class="login__label">Password</label>
          </div>
-               
+
          <div>
             <p class="login__signup">
                You do not have an account? <a href="#">Sign up</a>
             </p>
-  
+
             <a href="#" class="login__forgot">
                You forgot your password
             </a>
-  
+
             <button type="submit" class="login__button">Log In</button>
          </div>
       </form>
-  
+
       <i class="ri-close-line login__close" id="login-close"></i>
    </div>
 
    <main class="main main__index">
-      <section class="banner">
+      <section class="banner container">
          banner welcome
          <img src="" alt="image">
       </section>
-      <section class="carousel__home">
-         <div class="card__container swiper">
-            <div class="card__content">
+      <section class="comment container">
+         <div class="comment__container swiper">
+            <div class="comment__content">
                <div class="swiper-wrapper">
-                     <article class="card__article swiper-slide">
-                         <div class="card__text">
-                        <p> Simpatia e preço. Já foi necessário solicitar, tanto a assistência em viagem como a quebra de vidros, e não tive qualquer problema. <br></p>
-                         <div class="card__author">
-                            <img src="../assets/img/Reviweres/daniel.webp" alt="daniel" style="width: 50px; border-radius: 80%;">
-                         </div>
-                         <div class="author__text">
-                            <p> Daniel, Mar. 2023 </p>
-                            <!-- Indicar quantas estrelas foram dadas -->
-                           </div>
-                      </article>
-                     <article class="card__article swiper-slide">
-                        <div class="card__text">
-                       <p>  Pela rapidez, eficiência, responsabilidade nos trabalhos que executam. Parabéns e continuem sempre assim! <br>
-                            Isabel, Mar. 2023</p>
-                        </div>
-                    </article>
-                    <article class="card__article swiper-slide">
-                     <div class="card__text">
-                    <p>    Sou cliente de Motores Seguros há algum tempo, o serviço é muito bom, tem uma aplicação que funciona muito bem em caso de acidente. <br>
-                           Domingos, Mar. 2023</p>
-                         </div>
-                 </article>
-                 </div>
-             </div>
+                  <article class="comment__article swiper-slide">
+                     <div class="article__author">
+                        <img class="article__author__img" src="../assets/img/daniel.webp" alt="daniel img">
+                        <p class="article__author__name"> Daniel <br> Mar. 2023 </p>
+                     </div>
+                     <p class="article__text"> 
+                        "Simpatia e preço. Já foi necessário solicitar, tanto a assistência em viagem como a quebra
+                        de vidros, e não tive qualquer problema."
+                     </p>
+                  </article>
+                  <article class="comment__article swiper-slide">
+                     <div class="article__author">
+                        <img class="article__author__img" src="../assets/img/isabel.webp" alt="isabel img">
+                        <p class="article__author__name"> Isabel <br> Mar. 2023 </p>
+                     </div>
+                     <p class="article__text"> 
+                        "Pela rapidez, eficiência, responsabilidade nos trabalhos que executam. Parabéns e continuem
+                        sempre assim!"
+                     </p>
+                  </article>
+                  <article class="comment__article swiper-slide">
+                     <div class="article__author">
+                        <img class="article__author__img" src="../assets/img/domingos.webp" alt="domingos img">
+                        <p class="article__author__name"> Domingos <br> Mar. 2023 </p>
+                     </div>
+                     <p class="article__text"> 
+                        "Sou cliente de Motores Seguros há algum tempo, o serviço é muito bom, tem uma aplicação que
+                        funciona muito bem em caso de acidente."
+                     </p>
+                  </article>
+               </div>
             </div>
-             <!----- Navigation Buttons----->
-             <div class="swiper-button-prev">
-                 <i class="ri-arrow-left-s-line"></i>
-             </div>
-             <div class="swiper-button-next">
-                 <i class="ri-arrow-rigth-s-line"></i>
-             </div>
          </div>
-     </section>
+         <!----- Navigation Buttons----->
+         <div class="swiper-button-prev">
+            <i class="ri-arrow-left-s-line"></i>
+         </div>
+         <div class="swiper-button-next">
+            <i class="ri-arrow-rigth-s-line"></i>
+         </div>
+      </section>
       <section class="advert">
-         <div class="advert__imagebg"> </div>
-         <div class = "advert__text">
-      EXISTEM IMENSAS PROMOÇÕES À SUA ESPERA!
+         <div class="advert__bg"></div>
+         <div class="advert__content container">
+            <h2 class="advert__title">EXISTEM IMENSAS PROMOÇÕES À SUA ESPERA!</h2>
+            <a class="advert__link" href="promotion-and-benefits.html">CLIQUE PARA IR PARA A PÁGINA DAS PROMOÇÕES!</a>
          </div>
-         <div class="advert__redirect">
-            <a href="promotion-and-benefits.html">CLIQUE PARA IR PARA A PÁGINA DAS PROMOÇÕES!</a>
       </section>
    </main>
    <footer class="footer">
-      <a href="mailto:#">Email</a>
-      <span>&copy; Copyright</span>
-      <div>
-         Social media
+      <div class="footer__content container">
+         <a href="mailto:#">Email</a>
+         <span>&copy; Copyright</span>
+         <div>
+            Social media
+         </div>
       </div>
    </footer>
 </body>
