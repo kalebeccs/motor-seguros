@@ -111,14 +111,12 @@
     flex-direction: column;
     align-items: center;
     row-gap: 1rem;
-
+    font-weight: 600;
 }
 
 .benefit__icon {
-    font-size: 3rem;
-    height: 3rem;
-    width: 3rem;
-
+    font-size: 5rem;
+    width: 5rem;
 }
 
 /* ---------- PROMOTIONS -------------*/
