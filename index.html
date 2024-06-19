@@ -18,6 +18,7 @@
    <!--=============== JS ===============-->
    <script src="./assets/js/header.js" defer></script>
    <script src="./assets/js/main.js" defer></script>
+
    <!--=============== TITLE AND ICON ===============-->
    <title>Home | Motor Seguros</title>
    <link rel="shortcut icon" href="./assets/img/images.ico" type="image/x-icon">
@@ -37,7 +38,8 @@
    <meta property="og:image" content="">
 
 </head>
-   <!--==================== HEADER ====================-->
+<!--==================== HEADER ====================-->
+
 <body>
    <header class="header" id="header">
       <nav class="nav container">
@@ -111,11 +113,11 @@
    </div>
 
    <main class="main main__index">
-      <section class="banner container">
-         banner welcome
-         <img src="" alt="image">
+      <section class="banner">
+         <img class="banner__img" src="./assets/img/Generic_1.jpg" alt="image">
       </section>
-         <!--==================== REVIEWERS ====================-->
+
+      <!--==================== REVIEWERS ====================-->
       <section class="comment container">
          <div class="comment__container swiper">
             <div class="comment__content">
@@ -125,7 +127,7 @@
                         <img class="article__author__img" src="../assets/img/daniel.webp" alt="daniel img">
                         <p class="article__author__name"> Daniel <br> Mar. 2023 </p>
                      </div>
-                     <p class="article__text"> 
+                     <p class="article__text">
                         "Simpatia e preço. Já foi necessário solicitar, tanto a assistência em viagem como a quebra
                         de vidros, e não tive qualquer problema."
                      </p>
@@ -135,7 +137,7 @@
                         <img class="article__author__img" src="../assets/img/isabel.webp" alt="isabel img">
                         <p class="article__author__name"> Isabel <br> Mar. 2023 </p>
                      </div>
-                     <p class="article__text"> 
+                     <p class="article__text">
                         "Pela rapidez, eficiência, responsabilidade nos trabalhos que executam. Parabéns e continuem
                         sempre assim!"
                      </p>
@@ -145,7 +147,7 @@
                         <img class="article__author__img" src="../assets/img/domingos.webp" alt="domingos img">
                         <p class="article__author__name"> Domingos <br> Mar. 2023 </p>
                      </div>
-                     <p class="article__text"> 
+                     <p class="article__text">
                         "Sou cliente de Motores Seguros há algum tempo, o serviço é muito bom, tem uma aplicação que
                         funciona muito bem em caso de acidente."
                      </p>
@@ -154,13 +156,14 @@
             </div>
          </div>
          <!-- Navigation Buttons -->
-         <div class="swiper-button-prev swiper-button-prev-home">
-            <i class="ri-arrow-left-s-line ri-arrow-left-s-line-home"></i>
+         <div class="comment__button-prev swiper-button-prev">
+            <i class="comment__arrow-left ri-arrow-left-s-line"></i>
          </div>
-         <div class="swiper-button-next swiper-button-next-home">
-            <i class="ri-arrow-rigth-s-line ri-arrow-rigth-s-line-home"></i>
+         <div class="comment__button-next swiper-button-next">
+            <i class="comment__arrow-right ri-arrow-rigth-s-line"></i>
          </div>
       </section>
+
       <section class="advert">
          <div class="advert__bg"></div>
          <div class="advert__content container">
@@ -172,10 +175,24 @@
    <!--==================== FOOTER ====================-->
    <footer class="footer">
       <div class="footer__content container">
-         <a href="mailto:#">Email</a>
-         <span>&copy; Copyright</span>
-         <div>
-            Social Media
+         <a class="footer__mail__link" href="mailto:contato@motorseguros.pt">
+            <i class="footer__mail__icon ri-mail-line"></i>
+            contato@motorseguros.pt
+         </a>
+         <span class="footer__copy">&copy; Motor Seguros Ltda. - 2024</span>
+         <div class="footer__social">
+            <a class="footer__social__link" href="#">
+               <i class="footer__icon ri-instagram-line"></i>
+            </a>
+            <a class="footer__social__link" href="#">
+               <i class="footer__icon ri-facebook-line"></i>
+            </a>
+            <a class="footer__social__link" href="#">
+               <i class="footer__icon ri-linkedin-line"></i>
+            </a>
+            <a class="footer__social__link" href="#">
+               <i class="footer__icon ri-youtube-line"></i>
+            </a>
          </div>
       </div>
    </footer>
