@@ -99,3 +99,50 @@
 .advert__link:hover{
     background-color: var(--c2-hover);
 }
+
+/* Swiper Class */
+
+.swiper-button-next-home,
+.swiper-button-prev-home{
+    width: 45px;
+    height: 45px;
+    font-size: 3rem;
+    color: white;
+    border-radius: 50%;
+    margin: 3%;
+    background-color: bisque; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; 
+}    
+.swiper-button-prev-home{
+    left: 0;
+}
+.swiper-button-next-home{
+    right: 0;
+}
+.swiper-button-next-home::after{
+    font-size: 1.8rem;
+    padding-left: 4px;
+    /* margin-bottom: 34rem; */
+}
+.swiper-button-next-home:hover{
+    background-color: black;
+    /* margin-bottom: 34rem; */
+}
+.swiper-button-prev-home::after{
+    font-size: 1.8rem;
+    padding-right: 4px;
+    /* margin-bottom: 34rem; */
+}
+.swiper-button-prev-home:hover{
+    background-color: black;
+    /* margin-bottom: 34rem; */
+}
+.ri-arrow-left-s-line-home::before{
+    content: '';
+}
+.ri-arrow-rigth-s-line-home::before{
+    content: '';
+}

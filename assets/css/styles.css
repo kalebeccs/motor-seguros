@@ -4,9 +4,9 @@
 /*=============== COMPONENTS CSS ===============*/
 @import url(./components/header.css);
 @import url(./components/footer.css);
+@import url(./promotion-and-benefits.css);
 @import url(./index.css);
 @import url(./insurance-and-simulation.css);
-@import url(./promotion-and-benefits.css);
 @import url(./contact.css);
 @import url(./404.css);
 
