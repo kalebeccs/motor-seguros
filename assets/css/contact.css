@@ -176,20 +176,20 @@
 
 .form__input:focus,
 .form__area:focus {
-    border-color: var(--first-color);
+    border-color: var(--c1);
     box-shadow: 0 2px 16px hsla(230, 75%, 32%, .15);
 }
 
 .form__input:focus ~ .form__label,
 .form__area:focus ~ .form__label {
-    color: var(--first-color);
+    color: var(--c1);
 }
 
 .form__button {
     padding: 1rem;
     width: 80%;
     margin-inline: auto;
-    background-color: var(--first-color);
+    background-color: var(--c2);
     color: white;
     font-weight: bold;
     border-radius: .25rem;
@@ -198,7 +198,7 @@
 }
 
 .form__button:hover {
-    background-color: #005bb5;
+    background-color: var(--c1);
     box-shadow: 0 2px 16px hsla(230, 75%, 32%, .15);
 }
 
