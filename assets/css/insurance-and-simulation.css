@@ -1,33 +1,96 @@
-.main__is{
-    padding: 1.5rem;
+.main__is {
+    padding: 3rem 1.5rem;
     display: flex;
     flex-direction: column;
     row-gap: 5rem;
 }
 
-.insurance{
+/*===================== INSURANCE =====================*/
+.insurance {
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
+    row-gap: 3rem;
 }
 
-.insurance h2{
+.insurance__title {
     text-align: center;
 }
 
-.insurance__types{
+.insurance__types {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 2rem;
+    column-gap: 5rem;
 }
 
-.insurance__types div{
-    margin-inline: auto;
-    padding: 1rem;
-    border-radius: 0.5rem;    
-    
+.insurance__group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5rem;
+    min-width: 190px;
 }
-.simulation__cta{
+
+.insurance__icon {
+    margin-bottom: 0.3rem;
+    width: 5rem;
+}
+
+.insurance__icon-ps {
+    color: var(--c2);
+}
+
+.insurance__icon-pp {
+    color: var(--c1);
+}
+
+.insurance__icon-pv {
+    color: var(--c3);
+}
+
+.insurance__text p:nth-child(1),
+.insurance__text p:nth-child(3){
+    font-weight: 600;
+}
+
+.insurance__price {
+    color: var(--c1);
+}
+
+@media screen and (max-width: 1024px) {
+    .insurance__types{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        row-gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .insurance__types{
+        flex-direction: column;
+    }
+    .insurance__icon{
+        width: 4rem;
+    }
+}
+
+/*============ SIMULATION ===========================*/
+.simulation__form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    margin-inline: auto;
+}
+
+@media screen and (max-width: 576px) {
+    .simulation__form{
+        width: 100%;
+    }
+}
+
+.simulation__cta {
     background-color: var(--c2);
     margin-inline: auto;
     padding: 1rem 1.5rem;
@@ -35,41 +98,4 @@
     font-weight: 600;
     color: var(--c3);
     transition: background-color .3s, box-shadow .3s;
-}
-.insurance__icon{
-    color: var(--c3);
-}
-.insurance__group{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   text-align: center;
-   line-height: 1.5rem;
-   
-}
-
-.insurance__group svg{
-    margin-bottom: 0.3rem;
-    width: 5rem;
-}
-
-.ps__color{
-    color: var(--c2);
-}
-.pp__color{
-    color: var(--c1)
-}
-.pv__color{
-    color: var(--c3)
-}
-.price{
-    color: var(--c1)
-}
-/*============ SIMULATION ===========================*/
-.simulation__form{
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.5rem;
-    margin-inline: auto;
 }
