@@ -103,11 +103,37 @@
                You forgot your password
             </a>
   
-            <button type="submit" class="login__button">Log In</button>
+            <button onclick="login()" type="submit" class="login__button">Log In</button>
          </div>
       </form>
   
       <i class="ri-close-line login__close" id="login-close"></i>
+   </div>
+
+   <!--==================== SIGN UP ====================-->
+   <div class="signUp" id="signUp">
+      <form action="" class="signUp__form">
+         <h2 class="signUp__title">Sign Up</h2>
+         
+         <div class="email" id="email">
+            <input type="text" name="email" id="email" class="signUp__input" required>
+            <label for="email" class="signUp__label">Email</label>
+
+            <input type="password" id="password" class="singUp__input" required>
+            <label for="password" class="signUp__label">Password</label>
+
+            <input type="password" id="password_repeat" class="singUp__input" required>
+            <label for="password" class="signUp__label">Repeat Password</label>
+
+            <input type="text" id="fName" class="signUp__input" required>
+            <label for="fName" class="signUp__label"></label>
+
+            <input type="text" id="lName" class="signUp__input" required>
+            <label for="lName" class="signUp__label"></label>
+
+            <button onclick="signUp()" type="submit" class="signUp__button">Sign Up</button>
+         </div>
+      </form>
    </div>
 
    <main class="main main__index">
