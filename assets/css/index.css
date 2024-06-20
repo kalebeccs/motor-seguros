@@ -193,7 +193,7 @@
 .advert__title {
     color: var(--c2);
     font-size: 2rem;
-    text-shadow: 4px 4px 32px var(--black-color);
+    text-shadow: 4px 4px 16px var(--black-color);
 }
 
 .advert__link {
