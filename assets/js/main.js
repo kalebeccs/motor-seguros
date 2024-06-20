@@ -13,11 +13,11 @@ let swiperCards = new Swiper('.carousel__content', {
     //autoplay
     autoplay: {
         delay: 5000,
-        disableOnInteraction: false, 
+        disableOnInteraction: false,
     }
 });
 
-    /*=============== SWIPER INDEX ===============*/
+/*=============== SWIPER INDEX ===============*/
 let swiperCards2 = new Swiper('.comment__content', {
     loop: true,
     spaceBetween: 0,
@@ -29,9 +29,15 @@ let swiperCards2 = new Swiper('.comment__content', {
         prevEl: '.swiper-button-prev',
     },
 
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+    },
+
     //autoplay
     autoplay: {
         delay: 6000,
-        disableOnInteraction: false, 
+        disableOnInteraction: false,
     }
 });
