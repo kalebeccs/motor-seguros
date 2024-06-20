@@ -38,9 +38,9 @@
    <meta property="og:image" content="">
 
 </head>
-<!--==================== HEADER ====================-->
 
 <body>
+   <!--==================== HEADER ====================-->
    <header class="header" id="header">
       <nav class="nav container">
          <a href="#" class="nav__logo">Logo</a>
@@ -97,15 +97,17 @@
          </div>
 
          <div>
-            <p class="login__signup">
-               You do not have an account? <a href="#">Sign up</a>
+            <p class="login__signUp">
+               Do not have an account yet? <a href="#" id="login-signUp">Sign up</a>
             </p>
 
             <a href="#" class="login__forgot">
-               You forgot your password
+               Forgot your password?
             </a>
-  
-            <button type="submit" class="login__button" onclick="login()">Log In</button>
+
+            <button type="submit" class="login__button">Log In</button>
+
+            <span class="login__span" id="status"></span>
          </div>
       </form>
 
@@ -113,32 +115,76 @@
    </div>
 
    <!--==================== SIGN UP ====================-->
-   <div class="signup" id="signUp">
+   <div class="signUp" id="signUp">
       <form action="" class="signUp__form">
          <h2 class="signUp__title">Sign Up</h2>
-         
-         <div class="email" id="email">
-            <input type="text" name="email" id="email" class="signUp__input" required>
-            <label for="email" class="signUp__label">Email</label>
 
-            <input type="password" id="password" class="singUp__input" required>
-            <label for="password" class="signUp__label">Password</label>
+         <div class="signUp__group">
+            <div>
+               <input type="text" id="fName" class="signUp__input" required>
+               <label for="fName" class="signUp__label">First Name</label>
+            </div>
 
-            <input type="password" id="password_repeat" class="singUp__input" required>
-            <label for="password" class="signUp__label">Repeat Password</label>
+            <div>
+               <input type="text" id="lName" class="signUp__input" required>
+               <label for="lName" class="signUp__label">Last Name</label>
+            </div>
 
-            <input type="text" id="fName" class="signUp__input" required>
-            <label for="fName" class="signUp__label"></label>
+            <div>
+               <input type="text" name="email" id="email" class="signUp__input" required>
+               <label for="email" class="signUp__label">Email</label>
+            </div>
 
-            <input type="text" id="lName" class="signUp__input" required>
-            <label for="lName" class="signUp__label"></label>
+            <div>
+               <input type="password" id="password" class="singUp__input" required>
+               <label for="password" class="signUp__label">Password</label>
+            </div>
 
-            <button onclick="signUp()" type="submit" class="signUp__button">Sign Up</button>
+            <div>
+               <input type="password" id="password_repeat" class="singUp__input" required>
+               <label for="password" class="signUp__label">Repeat Password</label>
+            </div>
+
+            <div>
+               <p class="signUp__login">
+                  Already have an account? <a href="#" id="signUp-log-in">Log In</a>
+               </p>
+
+               <button type="submit" class="signUp__button">Sign Up</button>
+            </div>
          </div>
       </form>
+
+      <i class="ri-close-line signUp__close" id="signUp-close"></i>
+   </div>
+
+   <!--==================== FORGOT ====================-->
+   <div class="forgot" id="forgot">
+      <form action="" class="forgot__form">
+         <h2 class="forgot__title">Forgot your password</h2>
+
+         <div class="forgot__group">
+            <div>
+               <input type="email" placeholder="Write your email" id="forgot-email" class="forgot__input" required>
+               <label for="forgot-email" class="forgot__label">Email</label>
+            </div>
+         </div>
+
+         <div>
+            <p class="forgot__login">
+               Do you want to try again? <a href="#" id="forgot-log-in">Log In</a>
+            </p>
+
+            <button type="submit" class="forgot__button">Send</button>
+         </div>
+      </form>
+
+      <i class="ri-close-line forgot__close" id="forgot-close"></i>
    </div>
 
    <main class="main main__index">
+
+      <!--==================== BANNER ====================-->
       <section class="banner">
          <img class="banner__img" src="./assets/img/Generic_1.jpg" alt="image">
       </section>
@@ -151,9 +197,9 @@
                   <article class="comment__article swiper-slide">
                      <div class="article__author">
                         <img class="article__author__img" src="../assets/img/daniel.webp" alt="daniel img">
-                        <div class="article__author__name"> 
-                           <p>Daniel</p> 
-                           <p>Mar. 2023</p> 
+                        <div class="article__author__name">
+                           <p>Daniel</p>
+                           <p>Mar. 2023</p>
                            <p class="article__author__name-star">★ ★ ★ ★ ★</p>
                         </div>
                      </div>
@@ -166,8 +212,8 @@
                   <article class="comment__article swiper-slide">
                      <div class="article__author">
                         <img class="article__author__img" src="../assets/img/isabel.webp" alt="isabel img">
-                        <div class="article__author__name"> 
-                           <p>Isabel</p> 
+                        <div class="article__author__name">
+                           <p>Isabel</p>
                            <p>Mar. 2023</p>
                            <p class="article__author__name-star">★ ★ ★ ★ ★</p>
                         </div>
@@ -181,8 +227,8 @@
                   <article class="comment__article swiper-slide">
                      <div class="article__author">
                         <img class="article__author__img" src="../assets/img/domingos.webp" alt="domingos img">
-                        <div class="article__author__name"> 
-                           <p>Domingos</p> 
+                        <div class="article__author__name">
+                           <p>Domingos</p>
                            <p>Mar. 2023</p>
                            <p class="article__author__name-star">★ ★ ★ ★ ☆</p>
                         </div>
@@ -206,14 +252,17 @@
          <div class="comment__pagination swiper-pagination"></div>
       </section>
 
+      <!--==================== ADVERT ====================-->
       <section class="advert">
          <div class="advert__bg"></div>
          <div class="advert__content container">
             <h2 class="advert__title">EXISTEM IMENSAS PROMOÇÕES À SUA ESPERA!</h2>
-            <a class="advert__link" href="promotion-and-benefits.html">CLIQUE PARA IR PARA A PÁGINA DAS PROMOÇÕES!</a>
+            <a class="advert__link" href="promotion-and-benefits.html">CLIQUE PARA IR PARA A PÁGINA DAS
+               PROMOÇÕES!</a>
          </div>
       </section>
    </main>
+
    <!--==================== FOOTER ====================-->
    <footer class="footer">
       <div class="footer__content container">
@@ -239,4 +288,5 @@
       </div>
    </footer>
 </body>
+
 </html>

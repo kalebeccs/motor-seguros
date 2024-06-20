@@ -65,3 +65,11 @@
 .price{
     color: var(--c1)
 }
+/*============ SIMULATION ===========================*/
+.simulation__form{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    margin-inline: auto;
+}
