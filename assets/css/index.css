@@ -47,7 +47,7 @@
 }
 
 .article__author__img{
-    width: 13rem;
+    width: 10rem;
     border-radius: 50%;
     box-shadow: 0px 4px 16px var(--c3);
 }
@@ -140,8 +140,4 @@
 
 .advert__link:hover{
     background-color: var(--c2-hover);
-}
-
-.article__rating{
-font-weight: bold;
 }
