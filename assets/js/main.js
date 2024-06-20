@@ -29,4 +29,9 @@ let swiperCards2 = new Swiper('.comment__content', {
         prevEl: '.swiper-button-prev',
     },
 
+    //autoplay
+    autoplay: {
+        delay: 6000,
+        disableOnInteraction: false, 
+    }
 });

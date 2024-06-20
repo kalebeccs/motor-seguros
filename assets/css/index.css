@@ -141,3 +141,7 @@
 .advert__link:hover{
     background-color: var(--c2-hover);
 }
+
+.article__rating{
+font-weight: bold;
+}
