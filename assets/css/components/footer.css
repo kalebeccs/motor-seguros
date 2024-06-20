@@ -11,7 +11,7 @@
 }
 
 .footer__mail__link{
-  color: var(--c2);
+  color: var(--c1);
   display: flex;
   column-gap: 1rem;
   align-items: center;
@@ -19,7 +19,7 @@
 }
 
 .footer__mail__link:hover{
-  color: var(--c1);
+  color: var(--c2);
 }
 
 .footer__mail__icon{
@@ -37,12 +37,12 @@
 
 .footer__icon{
   font-size: 1.5rem;
-  color: var(--c2);
+  color: var(--c1);
   transition: color .3s;
 }
 
 .footer__icon:hover{
-  color: var(--c1);
+  color: var(--c2);
 }
 
 @media screen and (max-width: 1024px) {
@@ -66,7 +66,10 @@
 @media screen and (max-width: 576px) {
   .footer__content {
     flex-direction: column;
-    row-gap: .5rem;
+    row-gap: 1.5rem;
+  }
+  .footer__social{
+    column-gap: 1rem;
   }
   .footer__copy{
     margin-top: 3rem;
