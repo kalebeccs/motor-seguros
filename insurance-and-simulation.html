@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!--=============== REMIXICONS ===============-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+        
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="./assets/css/styles.css">
+    
+        <!--=============== JS ===============-->
+        <script src="./assets/js/header.js" defer></script>
+        <script src="./assets/js/main.js" defer></script>
+        
+        <!--=============== TITLE AND ICON ===============-->
+        <title>Insurance & Simulation | Motor Seguros</title>
+        <link rel="shortcut icon" href="./assets/img/images.ico" type="image/x-icon">
+    
+        <meta name="title" content="Motor Seguros">
+        <meta name="description" content="Motor Seguros é um projeto desenvolvido para a disciplina de Programação Web, que visa criar um site de seguros para carros e motos. Este site permite ao utilizador visualizar e contratar seguros de maneira simples e eficiente.">
+        <meta name="keywords" content="seguros, seguro para carro, seguro para moto, seguro para veiculo, seguro automóvel">
+        <meta name="author" content="@guilhermelouro, @miguellobato96, @kalebeccs, @rafadegus">
+    
+        <meta property="og:title" content="Motor Seguros">
+        <meta property="og:description" content="Motor Seguros é um projeto desenvolvido para a disciplina de Programação Web, que visa criar um site de seguros para carros e motos. Este site permite ao utilizador visualizar e contratar seguros de maneira simples e eficiente.">
+        <meta property="og:site_name" content="motorseguros.pt">
+        <meta property="og:url" content="https://motorseguros.pt/">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="">
+    </head>
+    <!--==================== HEADER ====================-->
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+           <a href="./index.html" class="nav__logo">Logo</a>
+
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li class="nav__item">
+                    <a href="./index.html" class="nav__link">Home</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="#" class="nav__link active">Insurance <br>& Simulation</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="./promotion-and-benefits.html" class="nav__link">Promotion <br>& Benefits</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="./contact.html" class="nav__link">Contact</a>
+                 </li>
+              </ul>
+
+              <!-- Close button -->
+              <div class="nav__close" id="nav-close">
+                 <i class="ri-close-line"></i>
+              </div>
+           </div>
+
+           <div class="nav__actions">
+              <!-- Login button -->
+              <i class="ri-user-line nav__login" id="login-btn"></i>
+
+              <!-- Toggle button -->
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line"></i>
+              </div>
+           </div>
+        </nav>
+     </header>
+
+     <!--==================== LOGIN ====================-->
+     <div class="login" id="login">
+        <form action="" class="login__form">
+           <h2 class="login__title">Log In</h2>
+    
+           <div class="login__group"> 
+              <input type="text" name="email" id="email" class="login__input" required>
+              <label for="email" class="login__label">Email</label>
+           </div>
+           <div class="login__group">
+              <input type="password" id="password" class="login__input" required>
+              <label for="password" class="login__label">Password</label>
+           </div>
+                 
+           <div>
+              <p class="login__signup">
+                 You do not have an account? <a href="#">Sign up</a>
+              </p>
+    
+              <a href="#" class="login__forgot">
+                 You forgot your password
+              </a>
+    
+              <button type="submit" class="login__button">Log In</button>
+           </div>
+        </form>
+    
+        <i class="ri-close-line login__close" id="login-close"></i>
+     </div>
+
+    <main class="main main__is">
+        <section class="insurance">
+            <h2>Insurance</h2>
+            <div class="insurance__types">
+                <div class="insurance__group">
+                  <svg class="ps__color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                     fill="currentColor">
+                     <path 
+                         d="M3.78307 2.82598L12 1L20.2169 2.82598C20.6745 2.92766 21 3.33347 21 3.80217V13.7889C21 15.795 19.9974 17.6684 18.3282 18.7812L12 23L5.6718 18.7812C4.00261 17.6684 3 15.795 3 13.7889V3.80217C3 3.33347 3.32553 2.92766 3.78307 2.82598ZM12 11C13.3807 11 14.5 9.88071 14.5 8.5C14.5 7.11929 13.3807 6 12 6C10.6193 6 9.5 7.11929 9.5 8.5C9.5 9.88071 10.6193 11 12 11ZM7.52746 16H16.4725C16.2238 13.75 14.3163 12 12 12C9.68372 12 7.77619 13.75 7.52746 16Z">
+                     </path>
+                  </svg>
+                    <p>Plano Standard <br> Desde <span class="price"> 14,95€/mês</span> <br> O plano básico, <br> perfeito para todos!</p>
+                </div>
+                <div class="insurance__group">
+                  <svg class="pp__color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                     fill="currentColor">
+                     <path 
+                        d="M3.78307 2.82598L12 1L20.2169 2.82598C20.6745 2.92766 21 3.33347 21 3.80217V13.7889C21 15.795 19.9974 17.6684 18.3282 18.7812L12 23L5.6718 18.7812C4.00261 17.6684 3 15.795 3 13.7889V3.80217C3 3.33347 3.32553 2.92766 3.78307 2.82598ZM11 10H8V12H11V15H13V12H16V10H13V7H11V10Z">
+                     </path>
+                  </svg>
+                    <p>Plano Plus <br> Desde <span class="price">19,99€/mês</span> <br> Com cobertura de danos <br> em caso de roubo.</p>
+                </div>
+                <div class="insurance__group">
+                  <svg class="pv__color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                     fill="currentColor">
+                     <path 
+                         d="M3.78307 2.82598L12 1L20.2169 2.82598C20.6745 2.92766 21 3.33347 21 3.80217V13.7889C21 15.795 19.9974 17.6684 18.3282 18.7812L12 23L5.6718 18.7812C4.00261 17.6684 3 15.795 3 13.7889V3.80217C3 3.33347 3.32553 2.92766 3.78307 2.82598ZM12 13.5L14.9389 15.0451L14.3776 11.7725L16.7553 9.45492L13.4695 8.97746L12 6L10.5305 8.97746L7.24472 9.45492L9.62236 11.7725L9.06107 15.0451L12 13.5Z">
+                     </path>
+                  </svg>
+                    <p>Plano VeriGud <br> Desde <span class="price">29,90€/mês</span> <br> A cobertura completa, <br> para ficar descansado.</p>
+                </div>
+                <!-- <div>
+                    <img src="" alt="image">
+                    <p>lorem ipsum</p>
+                </div>
+                <div>
+                    <img src="" alt="image">
+                    <p>lorem ipsum</p>
+                </div>
+                <div>
+                    <img src="" alt="image">
+                    <p>lorem ipsum</p>
+                </div>
+            </div> -->
+        </section>
+        <form class="simulation__form" action="">
+            <h2>Simulation Form</h2>
+            <div>
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Name">
+            </div>
+            <div>
+                <label for="nif">NIF</label>
+                <input id="nif" type="number" placeholder="NIF">
+            </div>
+            <div>
+                <label for="registration">Vehicle Registration</label>
+                <input id="registration" type="text" placeholder="Vehicle Registration">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Email">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <section class="simulation__cta"> <!--===============!!!!! Necessitamos desta section?===============-->
+            <!-- <h2>Contact Us</h2> -->
+            <!-- <p>lorem ipsum</p> -->
+            <a class="simulation__cta" href="./contact.html">Contate-nos!</a>
+        </section>
+    </main>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+       <div class="footer__content container">
+          <a class="footer__mail__link" href="mailto:contato@motorseguros.pt">
+             <i class="footer__mail__icon ri-mail-line"></i>
+             contato@motorseguros.pt
+          </a>
+          <span class="footer__copy">&copy; Motor Seguros Ltda. - 2024</span>
+          <div class="footer__social">
+             <a class="footer__social__link" href="#">
+                <i class="footer__icon ri-instagram-line"></i>
+             </a>
+             <a class="footer__social__link" href="#">
+                <i class="footer__icon ri-facebook-line"></i>
+             </a>
+             <a class="footer__social__link" href="#">
+                <i class="footer__icon ri-linkedin-line"></i>
+             </a>
+             <a class="footer__social__link" href="#">
+                <i class="footer__icon ri-youtube-line"></i>
+             </a>
+          </div>
+       </div>
+    </footer>
+</body>
+</html>

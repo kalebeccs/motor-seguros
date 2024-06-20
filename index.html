@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== SWIPER =============-->
+   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+   <script src="./assets/js/swiper-bundle.min.js" defer></script>
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="./assets/css/styles.css">
+
+   <!--=============== JS ===============-->
+   <script src="./assets/js/header.js" defer></script>
+   <script src="./assets/js/main.js" defer></script>
+
+   <!--=============== TITLE AND ICON ===============-->
+   <title>Home | Motor Seguros</title>
+   <link rel="shortcut icon" href="./assets/img/images.ico" type="image/x-icon">
+
+   <meta name="title" content="Motor Seguros">
+   <meta name="description"
+      content="Motor Seguros é um projeto desenvolvido para a disciplina de Programação Web, que visa criar um site de seguros para carros e motos. Este site permite ao utilizador visualizar e contratar seguros de maneira simples e eficiente.">
+   <meta name="keywords" content="seguros, seguro para carro, seguro para mota, seguro para veiculo, seguro automóvel">
+   <meta name="author" content="@guilhermelouro, @miguellobato96, @kalebeccs, @rafadegus">
+
+   <meta property="og:title" content="Motor Seguros">
+   <meta property="og:description"
+      content="Motor Seguros é um projeto desenvolvido para a disciplina de Programação Web, que visa criar um site de seguros para carros e motos. Este site permite ao utilizador visualizar e contratar seguros de maneira simples e eficiente.">
+   <meta property="og:site_name" content="motorseguros.pt">
+   <meta property="og:url" content="https://motorseguros.pt/">
+   <meta property="og:type" content="website">
+   <meta property="og:image" content="">
+
+</head>
+<!--==================== HEADER ====================-->
+
+<body>
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="nav__logo">Logo</a>
+
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a href="#" class="nav__link active">Home</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="./insurance-and-simulation.html" class="nav__link">Insurance <br>& Simulation</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="./promotion-and-benefits.html" class="nav__link">Promotion <br>& Benefits</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="./contact.html" class="nav__link">Contact</a>
+               </li>
+            </ul>
+
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-line"></i>
+            </div>
+         </div>
+
+         <div class="nav__actions">
+            <!-- Login button -->
+            <i class="ri-user-line nav__login" id="login-btn"></i>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+         </div>
+      </nav>
+   </header>
+<!--==================== LOGIN ====================-->
+<div class="login" id="login">
+   <form action="" class="login__form">
+      <h2 class="login__title">Log In</h2>
+
+      <div class="login__group">
+         <input type="text" name="email" id="email" class="login__input" required>
+         <label for="email" class="login__label">Email</label>
+      </div>
+      <div class="login__group">
+         <input type="password" id="password" class="login__input" required>
+         <label for="password" class="login__label">Password</label>
+      </div>
+
+      <div>
+         <p class="login__signUp">
+            Do not have an account yet? <a href="#" id="login-signUp">Sign up</a>
+         </p>
+
+         <a href="#" class="login__forgot">
+            Forgot your password?
+         </a>
+
+         <button type="submit" class="login__button">Log In</button>
+
+         <span class="login__span" id="status"></span>
+      </div>
+   </form>
+
+   <i class="ri-close-line login__close" id="login-close"></i>
+</div>
+
+<!--==================== SIGN UP ====================-->
+<div class="signUp" id="signU p">
+   <form action="" class="signUp__form">
+      <h2 class="signUp__title">Sign Up</h2>
+      
+      <div class="signUp__group">
+         <div>
+            <input type="text" id="fName" class="signUp__input" required>
+            <label for="fName" class="signUp__label">First Name</label>
+         </div>
+
+         <div>
+            <input type="text" id="lName" class="signUp__input" required>
+            <label for="lName" class="signUp__label">Last Name</label>
+         </div>
+
+         <div>
+            <input type="text" name="email" id="email" class="signUp__input" required>
+            <label for="email" class="signUp__label">Email</label>
+         </div>
+
+         <div>
+            <input type="password" id="password" class="singUp__input" required>
+            <label for="password" class="signUp__label">Password</label>
+         </div>
+
+         <div>
+            <input type="password" id="password_repeat" class="singUp__input" required>
+            <label for="password" class="signUp__label">Repeat Password</label>
+         </div>
+
+         <div>
+            <p class="signUp__login">
+               Already have an account? <a href="#" id="signUp-log-in">Log In</a>
+            </p>
+
+            <button type="submit" class="signUp__button">Sign Up</button>
+         </div>
+      </div>
+   </form>
+
+   <i class="ri-close-line signUp__close" id="signUp-close"></i>
+</div>
+
+<!--==================== FORGOT ====================-->
+<div class="forgot" id="forgot">
+   <form action="" class="forgot__form">
+      <h2 class="forgot__title">Forgot your password</h2>
+
+      <div class="forgot__group">
+         <div>
+            <input type="email" placeholder="Write your email" id="forgot-email" class="forgot__input" required>
+            <label for="forgot-email" class="forgot__label">Email</label>
+         </div>
+      </div>
+
+      <div>
+         <p class="forgot__login">
+            Do you want to try again? <a href="#" id="forgot-log-in">Log In</a>
+         </p>
+
+         <button type="submit" class="forgot__button">Send</button>
+      </div>
+   </form>
+
+   <i class="ri-close-line forgot__close" id="forgot-close"></i>
+</div>
+
+<main class="main main__index">
+   <section class="banner">
+      <img class="banner__img" src="./assets/img/Generic_1.jpg" alt="image">
+   </section>
+
+<main class="main main__index">
+   <section class="banner">
+      <img class="banner__img" src="./assets/img/Generic_1.jpg" alt="image">
+   </section>
+
+      <!--==================== REVIEWERS ====================-->
+      <section class="comment container">
+         <div class="comment__container swiper">
+            <div class="comment__content">
+               <div class="swiper-wrapper">
+                  <article class="comment__article swiper-slide">
+                     <div class="article__author">
+                        <img class="article__author__img" src="../assets/img/daniel.webp" alt="daniel img">
+                        <div class="article__author__name"> 
+                           <p>Daniel</p> 
+                           <p>Mar. 2023</p> 
+                           <p class="article__author__name-star">★ ★ ★ ★ ★</p>
+                        </div>
+                     </div>
+                     <p class="article__text">
+                        "Simpatia e preço. Já foi necessário solicitar, tanto a assistência em viagem como a quebra
+                        de vidros, e não tive qualquer problema."
+                     </p>
+                  </article>
+                  <article class="comment__article swiper-slide">
+                     <div class="article__author">
+                        <img class="article__author__img" src="../assets/img/isabel.webp" alt="isabel img">
+                        <div class="article__author__name"> 
+                           <p>Isabel</p> 
+                           <p>Mar. 2023</p>
+                           <p class="article__author__name-star">★ ★ ★ ★ ★</p>
+                        </div>
+                     </div>
+                     <p class="article__text">
+                        "Pela rapidez, eficiência e responsabilidade nos trabalhos que executam. Parabéns e continuem
+                        sempre assim!"
+                     </p>
+                  </article>
+                  <article class="comment__article swiper-slide">
+                     <div class="article__author">
+                        <img class="article__author__img" src="../assets/img/domingos.webp" alt="domingos img">
+                        <div class="article__author__name"> 
+                           <p>Domingos</p> 
+                           <p>Mar. 2023</p>
+                           <p class="article__author__name-star">★ ★ ★ ★ ☆</p>
+                        </div>
+                     </div>
+                     <p class="article__text">
+                        "Sou cliente de Motores Seguros há algum tempo, o serviço é muito bom, tem uma aplicação que
+                        funciona muito bem em caso de acidente, mas, por outro lado estão fechados aos Domingos."
+                     </p>
+                  </article>
+               </div>
+            </div>
+         </div>
+         <!-- Navigation Buttons -->
+         <div class="comment__button-prev swiper-button-prev">
+            <i class="comment__arrow-left ri-arrow-left-s-line"></i>
+         </div>
+         <div class="comment__button-next swiper-button-next">
+            <i class="comment__arrow-right ri-arrow-rigth-s-line"></i>
+         </div>
+         <!-- Pagination -->
+         <div class="comment__pagination swiper-pagination"></div>
+      </section>
+
+      <section class="advert">
+         <div class="advert__bg"></div>
+         <div class="advert__content container">
+            <h2 class="advert__title">EXISTEM IMENSAS PROMOÇÕES À SUA ESPERA!</h2>
+            <a class="advert__link" href="promotion-and-benefits.html">CLIQUE PARA IR PARA A PÁGINA DAS PROMOÇÕES!</a>
+         </div>
+      </section>
+   </main>
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__content container">
+         <a class="footer__mail__link" href="mailto:contato@motorseguros.pt">
+            <i class="footer__mail__icon ri-mail-line"></i>
+            contato@motorseguros.pt
+         </a>
+         <span class="footer__copy">&copy; Motor Seguros Ltda. - 2024</span>
+         <div class="footer__social">
+            <a class="footer__social__link" href="#">
+               <i class="footer__icon ri-instagram-line"></i>
+            </a>
+            <a class="footer__social__link" href="https://www.facebook.com/profile.php?id=61561459582613">
+               <i class="footer__icon ri-facebook-line"></i>
+            </a>
+            <a class="footer__social__link" href="#">
+               <i class="footer__icon ri-linkedin-line"></i>
+            </a>
+            <a class="footer__social__link" href="https://www.youtube.com/channel/UCyxE_NJEW6M8cXqqKsFogVg">
+               <i class="footer__icon ri-youtube-line"></i>
+            </a>
+         </div>
+      </div>
+   </footer>
+</body>
+</html>
