@@ -6,6 +6,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  column-gap: 1.5rem;
 }
 
 .footer__mail__link{
@@ -41,4 +43,33 @@
 
 .footer__icon:hover{
   color: var(--c1);
+}
+
+@media screen and (max-width: 1024px) {
+  .footer__content {
+    row-gap: .5rem;
+  }
+  .footer__mail__link{
+    column-gap: .5rem;
+  }
+  .footer__social{
+    column-gap: .5rem;
+  }
+}
+
+@media screen and (max-width: 714px) {
+  .footer__copy{
+    transform: translateY(1.125rem);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer__content {
+    flex-direction: column;
+    row-gap: .5rem;
+  }
+  .footer__copy{
+    margin-top: 3rem;
+    order: 3;
+  }
 }
