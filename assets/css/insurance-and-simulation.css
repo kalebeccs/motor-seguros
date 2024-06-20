@@ -1,5 +1,5 @@
 .main__is {
-    padding: 1.5rem;
+    padding: 3rem 1.5rem;
     display: flex;
     flex-direction: column;
     row-gap: 5rem;
@@ -9,7 +9,7 @@
 .insurance {
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
+    row-gap: 3rem;
 }
 
 .insurance__title {
@@ -19,7 +19,7 @@
 .insurance__types {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 3rem;
+    column-gap: 5rem;
 }
 
 .insurance__group {
@@ -28,9 +28,7 @@
     align-items: center;
     text-align: center;
     line-height: 1.5rem;
-    margin-inline: auto;
-    padding: 1rem;
-    border-radius: 0.5rem;
+    min-width: 190px;
 }
 
 .insurance__icon {
@@ -59,6 +57,24 @@
     color: var(--c1);
 }
 
+@media screen and (max-width: 1024px) {
+    .insurance__types{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        row-gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .insurance__types{
+        flex-direction: column;
+    }
+    .insurance__icon{
+        width: 4rem;
+    }
+}
+
 /*============ SIMULATION ===========================*/
 .simulation__form {
     width: 500px;
@@ -66,6 +82,12 @@
     flex-direction: column;
     row-gap: 1.5rem;
     margin-inline: auto;
+}
+
+@media screen and (max-width: 576px) {
+    .simulation__form{
+        width: 100%;
+    }
 }
 
 .simulation__cta {
