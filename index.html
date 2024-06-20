@@ -82,66 +82,78 @@
       </nav>
    </header>
 
-   <!--==================== LOGIN ====================-->
-   <div class="login" id="login">
-      <form action="" class="login__form">
-         <h2 class="login__title">Log In</h2>
-
-         <div class="login__group">
-            <input type="text" name="email" id="email" class="login__input" required>
-            <label for="email" class="login__label">Email</label>
-         </div>
-         <div class="login__group">
-            <input type="password" id="password" class="login__input" required>
-            <label for="password" class="login__label">Password</label>
+  <!--==================== SIGN UP ====================-->
+  <div class="signUp" id="signU p">
+   <form action="" class="signUp__form">
+      <h2 class="signUp__title">Sign Up</h2>
+      
+      <div class="signUp__group">
+         <div>
+            <input type="text" id="fName" class="signUp__input" required>
+            <label for="fName" class="signUp__label">First Name</label>
          </div>
 
          <div>
-            <p class="login__signup">
-               You do not have an account? <a href="#">Sign up</a>
-            </p>
-
-            <a href="#" class="login__forgot">
-               You forgot your password
-            </a>
-  
-            <button type="submit" class="login__button" onclick="login()">Log In</button>
+            <input type="text" id="lName" class="signUp__input" required>
+            <label for="lName" class="signUp__label">Last Name</label>
          </div>
-      </form>
 
-      <i class="ri-close-line login__close" id="login-close"></i>
-   </div>
-
-   <!--==================== SIGN UP ====================-->
-   <div class="signup" id="signUp">
-      <form action="" class="signUp__form">
-         <h2 class="signUp__title">Sign Up</h2>
-         
-         <div class="email" id="email">
+         <div>
             <input type="text" name="email" id="email" class="signUp__input" required>
             <label for="email" class="signUp__label">Email</label>
+         </div>
 
+         <div>
             <input type="password" id="password" class="singUp__input" required>
             <label for="password" class="signUp__label">Password</label>
+         </div>
 
+         <div>
             <input type="password" id="password_repeat" class="singUp__input" required>
             <label for="password" class="signUp__label">Repeat Password</label>
-
-            <input type="text" id="fName" class="signUp__input" required>
-            <label for="fName" class="signUp__label"></label>
-
-            <input type="text" id="lName" class="signUp__input" required>
-            <label for="lName" class="signUp__label"></label>
-
-            <button onclick="signUp()" type="submit" class="signUp__button">Sign Up</button>
          </div>
-      </form>
-   </div>
 
-   <main class="main main__index">
-      <section class="banner">
-         <img class="banner__img" src="./assets/img/Generic_1.jpg" alt="image">
-      </section>
+         <div>
+            <p class="signUp__login">
+               Already have an account? <a href="#" id="signUp-log-in">Log In</a>
+            </p>
+
+            <button type="submit" class="signUp__button">Sign Up</button>
+         </div>
+      </div>
+   </form>
+
+   <i class="ri-close-line signUp__close" id="signUp-close"></i>
+</div>
+
+<!--==================== FORGOT ====================-->
+<div class="forgot" id="forgot">
+   <form action="" class="forgot__form">
+      <h2 class="forgot__title">Forgot your password</h2>
+
+      <div class="forgot__group">
+         <div>
+            <input type="email" placeholder="Write your email" id="forgot-email" class="forgot__input" required>
+            <label for="forgot-email" class="forgot__label">Email</label>
+         </div>
+      </div>
+
+      <div>
+         <p class="forgot__login">
+            Do you want to try again? <a href="#" id="forgot-log-in">Log In</a>
+         </p>
+
+         <button type="submit" class="forgot__button">Send</button>
+      </div>
+   </form>
+
+   <i class="ri-close-line forgot__close" id="forgot-close"></i>
+</div>
+
+<main class="main main__index">
+   <section class="banner">
+      <img class="banner__img" src="./assets/img/Generic_1.jpg" alt="image">
+   </section>
 
       <!--==================== REVIEWERS ====================-->
       <section class="comment container">

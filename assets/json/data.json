@@ -1,0 +1,26 @@
+[
+    {
+        "firstname": "Guilherme",
+        "lastname": "Louro",
+        "email": "guilouro007@gmail.com",
+        "password":"gui2024"
+    },
+    {
+        "firstname": "Elieser",
+        "lastname": "Santos",
+        "email": "kalebeccs.dev@gmail.com",
+        "password":"kal2024"
+    },
+    {
+        "firstname": "Miguel",
+        "lastname": "Lobato",
+        "email": "miguelcabrallobato@gmail.com",
+        "password":"mig2024"
+    },
+    {
+        "firstname": "Rafael",
+        "lastname": "de Gusmão",
+        "email": "rafdegus16@gmail.com",
+        "password":"raf2024"
+    } 
+]
