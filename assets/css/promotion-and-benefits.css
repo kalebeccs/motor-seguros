@@ -1,150 +1,228 @@
-.main__pb{
-    padding: 0 1.5rem 5rem;
+.main__pb {
     display: flex;
     flex-direction: column;
     row-gap: 5rem;
+    margin-bottom: 5rem;
 }
 
-/*--------- Card-----------*/
+/*--------- Carousel -----------*/
 
-.carousel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: calc(var(--header-height) + 2rem);
- }
- @media screen and (max-width: 1024px){
-    .carousel{
-        margin-top:var(--header-height) ;
-    }
- }
- .card__container{
-    padding-block: 5rem;
-
- }
- 
- .card__content{
-    /* margin-inline: 1.75rem; */
-    border-radius: 1.25rem;
- }
- 
-.card__article{
-    width: 500px;
-    border-radius:1.25rem;
-    /* overflow: hidden; */
+.carousel {
+    height: calc(100vh - (var(--header-height) + 2rem));
 }
 
-.card__image{
-    position: relative;
-    /* background-color: var(--first-color);*/
-    /* padding-top: 1.5rem; */
-    margin-bottom: -.75rem; 
+.carousel__container {
+    height: 100%;
 }
-.card__img{
- width: 100%;
- margin: 0 auto;
- position:relative;
- z-index: 5;
-}
-/* Swiper Class */
 
-.swiper-button-next,
-.swiper-button-prev{
-    width: 45px;
-    height: 45px;
-    font-size: 3rem;
-    color: white;
-    border-radius:50%;
-    margin: 3%;
-    background-color: bisque; 
+.carousel__content {
+    height: 100%;
+}
+
+.carousel__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel__button-prev,
+.carousel__button-next {
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}    
-.swiper-button-prev{
-    left: 0;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--c2);
+    color: var(--white-color);
+    margin-inline: 1.5rem;
+    transition: background-color .3s;
 }
-.swiper-button-next{
-    right: 0;
+
+.carousel__button-prev:hover,
+.carousel__button-next:hover {
+    background-color: var(--c1);
 }
-.swiper-button-next::after{
-    font-size: 1.8rem;
-    padding-left: 4px;
+
+.carousel__arrow-left::before,
+.carousel__arrow-right::before {
+    content: '';
 }
-.swiper-button-next:hover{
-    background-color: black;
-}
-.swiper-button-prev::after{
-    font-size: 1.8rem;
+
+.carousel__button-prev::after {
+    font-size: 1.3rem;
+    font-weight: 900;
+    padding-top: 4px;
     padding-right: 4px;
 }
-.swiper-button-prev:hover{
-    background-color: black;
+
+.carousel__button-prev {
+    left: 0;
 }
-.ri-arrow-left-s-line::before{
-    content: '';
+
+.carousel__button-next {
+    right: 0;
 }
-.ri-arrow-rigth-s-line::before{
-    content: '';
+
+.carousel__button-next::after {
+    font-size: 1.3rem;
+    font-weight: 900;
+    padding-top: 4px;
+    padding-left: 4px;
 }
+
+@media screen and (max-width: 1024px) {
+    .carousel {
+        height: calc(100vh - var(--header-height));
+    }
+    .carousel__button-prev,
+    .carousel__button-next {
+        width: 2rem;
+        height: 2rem;
+    }
+    .carousel__button-prev::after,
+    .carousel__button-next::after{
+        font-size: 1rem;
+        padding-top: 2px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .carousel__button-prev,
+    .carousel__button-next {
+        background-color: transparent;
+    }
+}
+
 /* -------------- BENEFITS ----------- */
-.benefits,
-.promotions{ 
+.benefits {
     text-align: center;
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
 }
-.benefits__container{
+
+.benefits__container {
     padding-block: 5rem;
     display: flex;
-    justify-content: center; /*centra horizontalmente*/
-    align-items: center;    /*centra verticalmente*/
-    gap:3rem;
-}
-.benefits__img{
-    display: flex;
-}
-.seguro__img{
-    width: 15rem;
-    height: 15rem;
-    display: flex;
-    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
 }
 
-.benefits__list                         
-.promotions__list{               /* ver onde deixar a list */
+.benefit__group {
     display: flex;
-    justify-content: center;
-    column-gap: 3rem;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    font-weight: 600;
 }
+
+.benefit__icon {
+    font-size: 5rem;
+    width: 5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .benefits__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-inline: auto;
+        row-gap: 3rem;
+        padding-block: 3rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .benefits__container {
+        grid-template-columns: 1fr;
+        padding-block: 0;
+        row-gap: 2rem;
+    }
+
+    .benefit__icon {
+        font-size: 3rem;
+        width: 3rem;
+    }
+}
+
 /* ---------- PROMOTIONS -------------*/
-.promotions__list{
+.promotions {
+    text-align: center;
     display: flex;
-    justify-content: center;
-    column-gap: 3rem;
-    border-collapse: collapse;
-    border: 2px;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.promotions__table {
+    margin-inline: auto;
     letter-spacing: 1px;
 }
-/* .planos{
-     background-color: var(--first-color); 
-    
-} */
 
-.th{
-    border: 2px solid rgb(160 160 160);
-    padding: 8px 10px;
+.table__line-head .table__cell__head {
+    padding: .75rem 1.5rem;
     text-align: center;
+    color: var(--darkblue);
+    border-radius: .5rem .5rem 0 0;
+    position: relative;
+}
 
+.table__cell__head:last-child {
+    color: var(--white-color);
 }
-.td{
-    border: 1px solid rgb(160 160 160);
-    padding: 8px 10px;
-    text-align: center;
-}
-tbody .th{
+
+.table__body .th {
+    padding: .75rem;
+    border-radius: .5rem 0 0 .5rem;
     text-align: left;
+}
+
+.td {
+    text-align: center;
+    color: var(--darkblue);
+}
+
+
+.table__body tr:nth-child(odd) {
+    background-color: var(--border-color);
+}
+
+.table__body tr:nth-child(odd) td:last-child {
+    border-radius: 0 .5rem .5rem 0;
+}
+
+.td-special {
+    border-radius: 0 0 .5rem 0 !important;
+}
+
+.table__cell__head-ps {
+    background-color: var(--c2);
+}
+
+.table__cell__head-pp {
+    background-color: var(--c1);
+}
+
+.table__cell__head-pv {
+    background-color: var(--c3);
+}
+
+
+
+/* ---------- Call to Action -------------*/
+.benefits__cta,
+.promotions__cta {
+    background-color: var(--c2);
+    margin-inline: auto;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    font-weight: 600;
+    color: var(--c3);
+    transition: background-color .3s, box-shadow .3s;
+
+}
+
+.benefits__cta:hover,
+.promotions__cta:hover {
+    background-color: var(--c2-hover);
+    box-shadow: 2px 2px 16px var(--c5);
 }

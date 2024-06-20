@@ -4,9 +4,9 @@
 /*=============== COMPONENTS CSS ===============*/
 @import url(./components/header.css);
 @import url(./components/footer.css);
+@import url(./promotion-and-benefits.css);
 @import url(./index.css);
 @import url(./insurance-and-simulation.css);
-@import url(./promotion-and-benefits.css);
 @import url(./contact.css);
 @import url(./404.css);
 
@@ -25,6 +25,7 @@
 
   --c1: hsl(194, 71%, 50%);
   --c2: hsl(194, 70%, 74%);
+  --c2-hover: hsl(194, 70%, 68%);
   --c3: hsl(194, 71%, 27%);
   --c4: hsl(210, 7%, 52%);
   --c5: hsl(188, 6%, 75%);
@@ -114,13 +115,14 @@ img {
 
 .main{
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100vh - var(--header-height));
   margin-top: var(--header-height);
 }
 
 @media screen and (min-width: 1023px) {
   .main{
     margin-top: calc(var(--header-height) + 2rem);
+    min-height: calc(100vh - (var(--header-height) + 2rem));
   }
 }
 
