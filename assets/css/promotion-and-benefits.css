@@ -66,19 +66,35 @@
 .carousel__button-next::after {
     font-size: 1.3rem;
     font-weight: 900;
-    padding-left: 4px;
     padding-top: 4px;
+    padding-left: 4px;
 }
 
 @media screen and (max-width: 1024px) {
     .carousel {
         height: calc(100vh - var(--header-height));
     }
+    .carousel__button-prev,
+    .carousel__button-next {
+        width: 2rem;
+        height: 2rem;
+    }
+    .carousel__button-prev::after,
+    .carousel__button-next::after{
+        font-size: 1rem;
+        padding-top: 2px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .carousel__button-prev,
+    .carousel__button-next {
+        background-color: transparent;
+    }
 }
 
 /* -------------- BENEFITS ----------- */
-.benefits,
-.promotions {
+.benefits {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -90,23 +106,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
-}
-
-.seguro__img {
-    width: 15rem;
-    height: 15rem;
-    display: flex;
-    border-radius: 50%;
-}
-
-.benefits__list .promotions__list {
-    display: flex;
-    justify-content: center;
     column-gap: 3rem;
 }
 
-.benefit__img {
+.benefit__group {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,25 +122,55 @@
     width: 5rem;
 }
 
+@media screen and (max-width: 1024px) {
+    .benefits__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-inline: auto;
+        row-gap: 3rem;
+        padding-block: 3rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .benefits__container {
+        grid-template-columns: 1fr;
+        padding-block: 0;
+        row-gap: 2rem;
+    }
+
+    .benefit__icon {
+        font-size: 3rem;
+        width: 3rem;
+    }
+}
+
 /* ---------- PROMOTIONS -------------*/
-.promotions__list {
+.promotions {
+    text-align: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.promotions__table {
+    margin-inline: auto;
     letter-spacing: 1px;
 }
 
-.planos .th {
+.table__line-head .table__cell__head {
     padding: .75rem 1.5rem;
     text-align: center;
     color: var(--darkblue);
     border-radius: .5rem .5rem 0 0;
+    position: relative;
 }
 
-.th:last-child {
+.table__cell__head:last-child {
     color: var(--white-color);
 }
 
-.tbody .th {
+.table__body .th {
     padding: .75rem;
     border-radius: .5rem 0 0 .5rem;
     text-align: left;
@@ -149,11 +182,11 @@
 }
 
 
-.tbody tr:nth-child(odd) {
+.table__body tr:nth-child(odd) {
     background-color: var(--border-color);
 }
 
-tbody tr:nth-child(odd) td:last-child {
+.table__body tr:nth-child(odd) td:last-child {
     border-radius: 0 .5rem .5rem 0;
 }
 
@@ -161,18 +194,21 @@ tbody tr:nth-child(odd) td:last-child {
     border-radius: 0 0 .5rem 0 !important;
 }
 
-.ps {
+.table__cell__head-ps {
     background-color: var(--c2);
 }
 
-.pp {
+.table__cell__head-pp {
     background-color: var(--c1);
 }
 
-.pv {
+.table__cell__head-pv {
     background-color: var(--c3);
 }
 
+
+
+/* ---------- Call to Action -------------*/
 .benefits__cta,
 .promotions__cta {
     background-color: var(--c2);
