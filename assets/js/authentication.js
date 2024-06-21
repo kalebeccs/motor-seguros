@@ -117,10 +117,9 @@ function register_user (fName, lName, email, password) {
         .then(response => response.json())
         .then(data => {
             statusSpan.textContent = "Sign up successful!";
-            window.location.href = "https://motorseguros.pt/login.html";
         })
         .catch(error => {
-            statusSpan.textContent = "Error occurred while signing up";
+            statusSpan.textContent = "Error occurred while signing up.";
             console.error(error);
         });
 }
