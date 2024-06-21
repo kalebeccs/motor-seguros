@@ -4,27 +4,31 @@
         "lastname": "Louro",
         "email": "guilouro007@gmail.com",
         "password":"gui2024",
-        "username":"GuilhermeLouro"
+        "username":"GuilhermeLouro",
+        "address":"Campo Grande 400, 1700-098 Lisboa"
     },
     {
         "firstname": "Elieser",
         "lastname": "Santos",
         "email": "kalebeccs.dev@gmail.com",
         "password":"kal2024",
-        "username":"kalebeccs"
+        "username":"kalebeccs",
+        "address":"Campo Grande 400, 1700-098 Lisboa"
     },
     {
         "firstname": "Miguel",
         "lastname": "Lobato",
         "email": "miguelcabrallobato@gmail.com",
         "password":"mig2024",
-        "username":"miguellobato96"
+        "username":"miguellobato96",
+        "address":"Campo Grande 400, 1700-098 Lisboa"
     },
     {
         "firstname": "Rafael",
         "lastname": "de Gusmão",
         "email": "rafdegus16@gmail.com",
         "password":"raf2024",
-        "username":"Rafadegus"
+        "username":"Rafadegus",
+        "address":"Campo Grande 400, 1700-098 Lisboa"
     } 
 ]
