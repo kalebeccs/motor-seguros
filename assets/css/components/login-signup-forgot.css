@@ -92,21 +92,14 @@
   transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.login__actions{
-  display: flex;
-  flex-direction: column;
-  row-gap: 1rem;
+.signUp__label,
+.forgot__label{
+  transform: translateY(-38px);
 }
 
-.login__link{
-  color: var(--c1);
-}
-
-.login__link:hover{
-  text-decoration: underline;
-}
-
-.login__span {
+.login__span,
+.signUp__span,
+.forgot__span {
   display: block;
   color: var(--error-color);
   font-size: var(--small-font-size);
@@ -114,8 +107,10 @@
 }
 
 
-/* Login form ANIMATIONS */
-.login__input:focus { 
+/* ANIMATIONS */
+.login__input:focus,
+.signUp__input:focus,
+.forgot__input:focus { 
   outline: none;
   border: 2px solid var(--first-color);
 }
@@ -135,12 +130,22 @@
   color: var(--first-color)
 }
 
+.signUp__input:focus ~ .signUp__label,
+.forgot__input:focus ~ .forgot__label{
+  transform: translateX(-10%) translateY(-265%) scale(0.9);
+}
+
 .login__input:valid ~ .login__label,
 .signUp__input:valid ~ .signUp__label,
 .forgot__input:valid ~ .forgot__label{
   transform: translateX(-10%) translateY(-50%) scale(0.9);
   padding: 0.2rem;
   background-color: var(--container-color);
+}
+
+.signUp__input:valid ~ .signUp__label,
+.forgot__input:valid ~ .forgot__label{
+  transform: translateX(-10%) translateY(-265%) scale(0.9);
 }
 
 /* ---------------------- */
@@ -158,7 +163,9 @@
   margin-bottom: 1.25rem;
 }
 
-.login__button {
+.login__button,
+.signUp__button,
+.forgot__button {
   display: inline-block;
   background-color: var(--first-color);
   width: 100%;
@@ -170,7 +177,9 @@
   transition: box-shadow .4s;
 }
 
-.login__button:hover {
+.login__button:hover,
+.signUp__button:hover,
+.forgot__button:hover {
   box-shadow: 0 4px 24px hsla(230, 75%, 40%, .4);
 }
 
