@@ -6,11 +6,11 @@
 // References to the necessary DOM elements: 
 const email = document.getElementById('email'),
     password = document.getElementById('password'),
-    loginBtnOnUse = document.getElementById('login__button'),
+    loginSubmit = document.getElementById('login__button'),
     statusSpan = document.getElementById('status');
 
 // An event listener is added to the login button to trigger the login process when clicked.
-loginBtnOnUse.addEventListener('click', (e) => {
+loginSubmit.addEventListener('click', (e) => {
     e.preventDefault();
     authenticate(email.value, password.value);
 })
@@ -57,10 +57,10 @@ const fName = document.getElementById('fName'),
     lName = document.getElementById('lName'),
     signUpEmail = document.getElementById('email'),
     signUpPassword = document.getElementById('password'),
-    signUpBtn = document.getElementById('signUp__button');
+    signUpSubmit = document.getElementById('signUp__button');
 
 // An event listener is added to the Sign Up button to trigger the sign up process when clicked.
-signUpBtn.addEventListener('click', (e) => {
+signSubmit.addEventListener('click', (e) => {
     e.preventDefault();
     trySignUp(signUpEmail.value, signUpPassword.value, fName.value, lName.value);
 })
