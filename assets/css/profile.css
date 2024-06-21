@@ -4,6 +4,11 @@
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
+    border: 2px solid var(--c5);
+    transition: border .3s;
+}
+
+.nav__avatar:hover {
     border: 2px solid var(--c2);
 }
 

@@ -90,7 +90,16 @@
     }
 }
 
-.simulation__cta {
+
+/*============ CTA ===========================*/
+.simulation__cta{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    text-align: center;
+}
+
+.simulation__cta__link {
     background-color: var(--c2);
     margin-inline: auto;
     padding: 1rem 1.5rem;
@@ -98,4 +107,9 @@
     font-weight: 600;
     color: var(--c3);
     transition: background-color .3s, box-shadow .3s;
+}
+
+.simulation__cta__link:hover{
+    background-color: var(--c1);
+    box-shadow: 0 2px 16px hsla(230, 75%, 32%, .15);
 }
