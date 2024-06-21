@@ -23,6 +23,7 @@ async function authenticate(email, password) {
         if (email == user.email) {
             if (password == user.password) {
                 statusSpan.textContent = "Login successful!";
+                sessionStorage.setItem("user",JSON.stringify(user))
                 window.location.replace('../../profile.html');
                 console.log("Login successful!");
             }

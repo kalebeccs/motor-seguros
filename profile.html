@@ -14,7 +14,7 @@
 
    <!--=============== JS ===============-->
    <script src="./assets/js/header.js" defer></script>
-   <script src="./assets/js/main.js" defer></script>
+   <script src="./assets/js/profile.js" defer></script>
 
    <!--=============== TITLE AND ICON ===============-->
    <title>Perfil | MotorSeguros</title>
@@ -70,8 +70,9 @@
 
          <div class="nav__actions">
             <!-- Avatar -->
-             <a href="#">
-                <img class="nav__avatar" src="./assets/img/avatar-blank.webp" alt="Avatar" id="nav-avatar">
+             <a class="nav__exit" href="#">
+               <i class="ri-logout-box-line" id="nav-exit"></i>
+               <img class="nav__avatar" src="./assets/img/avatar-blank.webp" alt="Avatar" id="nav-avatar">
              </a>
 
             <!-- Toggle button -->
@@ -85,12 +86,10 @@
    <main class="profile-page">
       <section class="content">
          <div class="cover"></div>
-         <img class="avatar" src="./assets/img/avatar-blank.webp" alt="Profile Picture">
+         <img id="profile-avatar" class="avatar" src="./assets/img/avatar-blank.webp" alt="Profile Picture">
 
-         <div class="name" id="profile__name">fName lName</div>
-         <div class="address">City, Country</div>
-            <div class=" email" id="profile__email">Email@gmail.com</div>
-         <div class="phone">123123123</div>
+         <div class="name" id="profile-name">fName lName</div>
+            <div class="email" id="profile-email">Email@gmail.com</div>
 
          <button class="sims__button">Simulations</button>
       </section>
