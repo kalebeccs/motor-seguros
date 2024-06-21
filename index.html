@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-pt">
 
 <head>
    <meta charset="UTF-8">
@@ -22,17 +22,17 @@
 
    <!--=============== TITLE AND ICON ===============-->
    <title>Home | Motor Seguros</title>
-   <link rel="shortcut icon" href="./assets/img/favicon2.png" type="image/x-icon">
+   <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
 
    <meta name="title" content="Motor Seguros">
    <meta name="description"
-      content="Motor Seguros é um projeto desenvolvido para a disciplina de Programação Web, que visa criar um site de seguros para carros e motos. Este site permite ao utilizador visualizar e contratar seguros de maneira simples e eficiente.">
+         content="Motor Seguros é um projeto desenvolvido para a disciplina de Programação Web, que visa criar um site de seguros para carros e motos. Este site permite ao utilizador visualizar e contratar seguros de maneira simples e eficiente.">
    <meta name="keywords" content="seguros, seguro para carro, seguro para mota, seguro para veiculo, seguro automóvel">
    <meta name="author" content="@guilhermelouro, @miguellobato96, @kalebeccs, @rafadegus">
 
    <meta property="og:title" content="Motor Seguros">
    <meta property="og:description"
-      content="Motor Seguros é um projeto desenvolvido para a disciplina de Programação Web, que visa criar um site de seguros para carros e motos. Este site permite ao utilizador visualizar e contratar seguros de maneira simples e eficiente.">
+         content="Motor Seguros é um projeto desenvolvido para a disciplina de Programação Web, que visa criar um site de seguros para carros e motos. Este site permite ao utilizador visualizar e contratar seguros de maneira simples e eficiente.">
    <meta property="og:site_name" content="motorseguros.pt">
    <meta property="og:url" content="https://motorseguros.pt/">
    <meta property="og:type" content="website">
@@ -99,15 +99,16 @@
             <label for="password" class="login__label">Password</label>
          </div>
 
-            <button type="submit" class="login__button">Log In</button>
-         <div>
+         <div class="login__actions">
             <p class="login__signUp">
-               Do not have an account yet? <a href="#" id="login-signUp">Sign up</a>
+               Do not have an account yet? <a class="login__link" href="#" id="login-signUp">Sign up</a>
             </p>
 
-            <a href="#" class="login__forgot" id="login-forgot">
+            <a class="login__link" href="#" class="login__forgot">
                Forgot your password?
             </a>
+
+            <button type="submit" class="login__button">Log In</button>
 
             <span class="login__span" id="status"></span>
          </div>
@@ -138,20 +139,21 @@
             </div>
 
             <div>
-               <input type="password" id="password" class="signUp__input" required>
+               <input type="password" id="password" class="singUp__input" required>
                <label for="password" class="signUp__label">Password</label>
             </div>
 
             <div>
-               <input type="password" id="password_repeat" class="signUp__input" required>
+               <input type="password" id="password_repeat" class="singUp__input" required>
                <label for="password" class="signUp__label">Repeat Password</label>
             </div>
 
-               <button type="submit" class="signUp__button" id="signUp__button">Sign Up</button>
             <div>
                <p class="signUp__login">
                   Already have an account? <a href="#" id="signUp-log-in">Log In</a>
                </p>
+
+               <button type="submit" class="signUp__button" id="signUp__button">Sign Up</button>
             </div>
          </div>
       </form>
@@ -166,27 +168,29 @@
 
          <div class="forgot__group">
             <div>
-               <input type="email" id="forgot-email" class="forgot__input" required>
+               <input type="email" placeholder="Write your email" id="forgot-email" class="forgot__input" required>
                <label for="forgot-email" class="forgot__label">Email</label>
             </div>
          </div>
 
-            <button type="submit" class="forgot__button" id="forgot__button">Send</button>
          <div>
             <p class="forgot__login">
                Do you want to try again? <a href="#" id="forgot-log-in">Log In</a>
             </p>
+
+            <button type="submit" class="forgot__button" id="forgot__button">Send</button>
          </div>
       </form>
 
       <i class="ri-close-line forgot__close" id="forgot-close"></i>
    </div>
 
+   <!--==================== MAIN ====================-->
    <main class="main main__index">
 
       <!--==================== BANNER ====================-->
       <section class="banner">
-         <img class="banner__img" src="./assets/img/seguro_automovel.png" alt="image">
+         <img class="banner__img" src="./assets/img/banner.webp" alt="image">
          <div class="banner__bg"></div>
          <div class="banner__content">
             <h1 class="banner__title">MotorSeguros</h1>
@@ -261,9 +265,12 @@
       <section class="advert">
          <div class="advert__bg"></div>
          <div class="advert__content container">
-            <h2 class="advert__title">EXISTEM IMENSAS PROMOÇÕES À SUA ESPERA!</h2>
-            <a class="advert__link" href="promotion-and-benefits.html">CLIQUE PARA IR PARA A PÁGINA DAS
-               PROMOÇÕES!</a>
+            <h2 class="advert__title">
+               Existem imensas promoções à sua espera!
+            </h2>
+            <a class="advert__link" href="promotion-and-benefits.html">
+               Clique para ir para a página das promoções!
+            </a>
          </div>
       </section>
    </main>
