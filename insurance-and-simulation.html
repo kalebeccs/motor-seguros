@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-pt">
 
 <head>
    <meta charset="UTF-8">
@@ -17,18 +17,18 @@
    <script src="./assets/js/authentication.js" defer></script>
 
    <!--=============== TITLE AND ICON ===============-->
-   <title>Insurance & Simulation | Motor Seguros</title>
-   <link rel="shortcut icon" href="./assets/img/images.ico" type="image/x-icon">
+   <title>Seguros & Simulações | MotorSeguros</title>
+   <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
 
-   <meta name="title" content="Motor Seguros">
+   <meta name="title" content="MotorSeguros">
    <meta name="description"
-      content="Motor Seguros é um projeto desenvolvido para a disciplina de Programação Web, que visa criar um site de seguros para carros e motos. Este site permite ao utilizador visualizar e contratar seguros de maneira simples e eficiente.">
+         content="Motor Seguros é um projeto desenvolvido para a disciplina de Programação Web, que visa criar um site de seguros para carros e motos. Este site permite ao utilizador visualizar e contratar seguros de maneira simples e eficiente.">
    <meta name="keywords" content="seguros, seguro para carro, seguro para moto, seguro para veiculo, seguro automóvel">
    <meta name="author" content="@guilhermelouro, @miguellobato96, @kalebeccs, @rafadegus">
 
-   <meta property="og:title" content="Motor Seguros">
+   <meta property="og:title" content="MotorSeguros">
    <meta property="og:description"
-      content="Motor Seguros é um projeto desenvolvido para a disciplina de Programação Web, que visa criar um site de seguros para carros e motos. Este site permite ao utilizador visualizar e contratar seguros de maneira simples e eficiente.">
+         content="Motor Seguros é um projeto desenvolvido para a disciplina de Programação Web, que visa criar um site de seguros para carros e motos. Este site permite ao utilizador visualizar e contratar seguros de maneira simples e eficiente.">
    <meta property="og:site_name" content="motorseguros.pt">
    <meta property="og:url" content="https://motorseguros.pt/">
    <meta property="og:type" content="website">
@@ -39,18 +39,18 @@
    <!--==================== HEADER ====================-->
    <header class="header" id="header">
       <nav class="nav container">
-         <a href="#" class="nav__logo">
+         <a href="./index.html" class="nav__logo">
             <img class="nav__img" src="./assets/img/logo.png" alt="logo">
          </a>
 
          <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
                <li class="nav__item">
-                  <a href="#" class="nav__link active">Home</a>
+                  <a href="./index.html" class="nav__link">Home</a>
                </li>
 
                <li class="nav__item">
-                  <a href="./insurance-and-simulation.html" class="nav__link">Insurance <br>& Simulation</a>
+                  <a href="./insurance-and-simulation.html" class="nav__link active">Insurance <br>& Simulation</a>
                </li>
 
                <li class="nav__item">
@@ -94,12 +94,12 @@
             <label for="password" class="login__label">Password</label>
          </div>
 
-         <div>
+         <div class="login__actions">
             <p class="login__signUp">
-               Do not have an account yet? <a href="#" id="login-signUp">Sign up</a>
+               Do not have an account yet? <a class="login__link" href="#" id="login-signUp">Sign up</a>
             </p>
 
-            <a href="#" class="login__forgot">
+            <a class="login__link" href="#" class="login__forgot">
                Forgot your password?
             </a>
 
@@ -180,6 +180,7 @@
       <i class="ri-close-line forgot__close" id="forgot-close"></i>
    </div>
 
+   <!--==================== MAIN ====================-->
    <main class="main main__is">
       <section class="insurance container">
          <h2 class="insurance__title">Insurance</h2>
