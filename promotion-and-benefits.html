@@ -18,6 +18,7 @@
     <!--=============== JS ===============-->
     <script src="./assets/js/header.js" defer></script>
     <script src="./assets/js/main.js" defer></script>
+    <script src="./assets/js/authentication.js" defer></script>
 
     <!--=============== TITLE AND ICON ===============-->
     <title>Promotion & Benefits | Motor Seguros</title>
@@ -40,76 +41,150 @@
 </head>
 
 <body>
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="./index.html" class="nav__logo">Logo</a>
+    <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+    <nav class="nav container">
+       <a href="#" class="nav__logo">
+          <img class="nav__img" src="./assets/img/logo.png" alt="logo">
+       </a>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="./index.html" class="nav__link">Home</a>
-                    </li>
+       <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+             <li class="nav__item">
+                <a href="#" class="nav__link active">Home</a>
+             </li>
 
-                    <li class="nav__item">
-                        <a href="./insurance-and-simulation.html" class="nav__link">Insurance <br>& Simulation</a>
-                    </li>
+             <li class="nav__item">
+                <a href="./insurance-and-simulation.html" class="nav__link">Insurance <br>& Simulation</a>
+             </li>
 
-                    <li class="nav__item">
-                        <a href="#" class="nav__link active">Promotion <br>& Benefits</a>
-                    </li>
+             <li class="nav__item">
+                <a href="./promotion-and-benefits.html" class="nav__link">Promotion <br>& Benefits</a>
+             </li>
 
-                    <li class="nav__item">
-                        <a href="./contact.html" class="nav__link">Contact</a>
-                    </li>
-                </ul>
+             <li class="nav__item">
+                <a href="./contact.html" class="nav__link">Contact</a>
+             </li>
+          </ul>
 
-                <!-- Close button -->
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-line"></i>
-                </div>
-            </div>
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+             <i class="ri-close-line"></i>
+          </div>
+       </div>
 
-            <div class="nav__actions">
-                <!-- Login button -->
-                <i class="ri-user-line nav__login" id="login-btn"></i>
+       <div class="nav__actions">
+          <!-- Login button -->
+          <i class="ri-user-line nav__login" id="login-btn"></i>
 
-                <!-- Toggle button -->
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-line"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
+          <!-- Toggle button -->
+          <div class="nav__toggle" id="nav-toggle">
+             <i class="ri-menu-line"></i>
+          </div>
+       </div>
+    </nav>
+ </header>
 
-    <!--==================== LOGIN ====================-->
-    <div class="login" id="login">
-        <form action="" class="login__form">
-            <h2 class="login__title">Log In</h2>
+ <!--==================== LOGIN ====================-->
+ <div class="login" id="login">
+    <form action="" class="login__form">
+       <h2 class="login__title">Log In</h2>
 
-            <div class="login__group">
-                <input type="text" name="email" id="email" class="login__input" required>
-                <label for="email" class="login__label">Email</label>
-            </div>
-            <div class="login__group">
-                <input type="password" id="password" class="login__input" required>
-                <label for="password" class="login__label">Password</label>
-            </div>
+       <div class="login__group">
+          <input type="text" name="email" id="email" class="login__input" required>
+          <label for="email" class="login__label">Email</label>
+       </div>
+       <div class="login__group">
+          <input type="password" id="password" class="login__input" required>
+          <label for="password" class="login__label">Password</label>
+       </div>
 
-            <div>
-                <p class="login__signup">
-                    You do not have an account? <a href="#">Sign up</a>
-                </p>
+       <div>
+          <p class="login__signUp">
+             Do not have an account yet? <a href="#" id="login-signUp">Sign up</a>
+          </p>
 
-                <a href="#" class="login__forgot">
-                    You forgot your password
-                </a>
+          <a href="#" class="login__forgot">
+             Forgot your password?
+          </a>
 
-                <button type="submit" class="login__button">Log In</button>
-            </div>
-        </form>
+          <button type="submit" class="login__button">Log In</button>
 
-        <i class="ri-close-line login__close" id="login-close"></i>
-    </div>
+          <span class="login__span" id="status"></span>
+       </div>
+    </form>
+
+    <i class="ri-close-line login__close" id="login-close"></i>
+ </div>
+
+ <!--==================== SIGN UP ====================-->
+ <div class="signUp" id="signUp">
+    <form action="" class="signUp__form">
+       <h2 class="signUp__title">Sign Up</h2>
+
+       <div class="signUp__group">
+          <div>
+             <input type="text" id="fName" class="signUp__input" required>
+             <label for="fName" class="signUp__label">First Name</label>
+          </div>
+
+          <div>
+             <input type="text" id="lName" class="signUp__input" required>
+             <label for="lName" class="signUp__label">Last Name</label>
+          </div>
+
+          <div>
+             <input type="text" name="email" id="email" class="signUp__input" required>
+             <label for="email" class="signUp__label">Email</label>
+          </div>
+
+          <div>
+             <input type="password" id="password" class="singUp__input" required>
+             <label for="password" class="signUp__label">Password</label>
+          </div>
+
+          <div>
+             <input type="password" id="password_repeat" class="singUp__input" required>
+             <label for="password" class="signUp__label">Repeat Password</label>
+          </div>
+
+          <div>
+             <p class="signUp__login">
+                Already have an account? <a href="#" id="signUp-log-in">Log In</a>
+             </p>
+
+             <button type="submit" class="signUp__button" id="signUp__button">Sign Up</button>
+          </div>
+       </div>
+    </form>
+
+    <i class="ri-close-line signUp__close" id="signUp-close"></i>
+ </div>
+
+ <!--==================== FORGOT ====================-->
+ <div class="forgot" id="forgot">
+    <form action="" class="forgot__form">
+       <h2 class="forgot__title">Forgot your password</h2>
+
+       <div class="forgot__group">
+          <div>
+             <input type="email" placeholder="Write your email" id="forgot-email" class="forgot__input" required>
+             <label for="forgot-email" class="forgot__label">Email</label>
+          </div>
+       </div>
+
+       <div>
+          <p class="forgot__login">
+             Do you want to try again? <a href="#" id="forgot-log-in">Log In</a>
+          </p>
+
+          <button type="submit" class="forgot__button" id="forgot__button">Send</button>
+       </div>
+    </form>
+
+    <i class="ri-close-line forgot__close" id="forgot-close"></i>
+ </div>
+
     <!--==========================Carousel=================================================-->
     <main class="main main__pb">
         <section class="carousel">
