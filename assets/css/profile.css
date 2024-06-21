@@ -4,11 +4,6 @@
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
-    border: 2px solid var(--c5);
-    transition: border .3s;
-}
-
-.nav__avatar:hover {
     border: 2px solid var(--c2);
 }
 
@@ -16,15 +11,15 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    padding-top: 15rem;
+    padding-top: 10rem;
 
     .content{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        height: 75%;
-        width: 75%;
+        justify-content: center;
+        height: 90%;
+        width: 90%;
         max-width: 800px;
         gap: 1rem;
         padding: 2rem;
@@ -40,24 +35,24 @@
             object-position: center;
             border-radius: 50%;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            transform: translateY(-60%);
+            transform: translateY(-50%);
         }
 
         .name {
             font-size: 2.5rem;
             font-weight: 600;
             color: var(--c1);
-            transform: translateY(-175%);
+            transform: translateY(-200%);
         }
 
         .address {
             font-size: 1.25rem;
-            transform: translateY(-375%);
+            transform: translateY(-450%);
         }
 
         .email, .phone {
             font-size: 1.35rem;
-            transform: translateY(-125%);
+            transform: translateY(-150%);
         }
 
         .sims__button {
@@ -68,6 +63,7 @@
             border-radius: 2rem;
             background: linear-gradient(100deg, var(--c1) 30%, var(--c2) 100%);
             box-shadow: rgba(50, 50, 93, 0.11) 0px 4px 6px, rgba(0, 0, 0, 0.08) 0px 1px 3px;
+            transform: translateY(-10%);
         }
     }
     
