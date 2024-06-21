@@ -134,3 +134,14 @@ img {
     margin-inline: auto;
   }
 }
+
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar{
+  width: .6rem;
+  background-color: var(--c5);
+}
+
+::-webkit-scrollbar-thumb{
+  width: .6rem;
+  background-color: var(--c1);
+}
