@@ -9,3 +9,24 @@
     row-gap: 1rem;
     align-items: center;
 }
+
+.error__title{
+    font-size: 3rem;
+    color: var(--c1);
+}
+
+.error__link{
+    color: var(--c2);
+    transition: color .3s, text-decoration .3s;
+}
+
+.error__link:hover{
+    color: var(--c1);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 576px) {
+    .error__text{
+        text-align: center;
+    }
+}

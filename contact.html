@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-pt">
 
 <head>
     <meta charset="UTF-8">
@@ -19,18 +19,18 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
 
     <!--=============== TITLE AND ICON ===============-->
-    <title>Contact | Motor Seguros</title>
-    <link rel="shortcut icon" href="./assets/img/images.ico" type="image/x-icon">
+    <title>Contact | MotorSeguros</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
 
-    <meta name="title" content="Motor Seguros">
+    <meta name="title" content="MotorSeguros">
     <meta name="description"
-        content="Motor Seguros é um projeto desenvolvido para a disciplina de Programação Web, que visa criar um site de seguros para carros e motos. Este site permite ao utilizador visualizar e contratar seguros de maneira simples e eficiente.">
+          content="Motor Seguros é um projeto desenvolvido para a disciplina de Programação Web, que visa criar um site de seguros para carros e motos. Este site permite ao utilizador visualizar e contratar seguros de maneira simples e eficiente.">
     <meta name="keywords" content="seguros, seguro para carro, seguro para mota, seguro para veiculo, seguro automóvel">
     <meta name="author" content="@guilhermelouro, @miguellobato96, @kalebeccs, @rafadegus">
 
-    <meta property="og:title" content="Motor Seguros">
+    <meta property="og:title" content="MotorSeguros">
     <meta property="og:description"
-        content="Motor Seguros é um projeto desenvolvido para a disciplina de Programação Web, que visa criar um site de seguros para carros e motos. Este site permite ao utilizador visualizar e contratar seguros de maneira simples e eficiente.">
+          content="Motor Seguros é um projeto desenvolvido para a disciplina de Programação Web, que visa criar um site de seguros para carros e motos. Este site permite ao utilizador visualizar e contratar seguros de maneira simples e eficiente.">
     <meta property="og:site_name" content="motorseguros.pt">
     <meta property="og:url" content="https://motorseguros.pt/">
     <meta property="og:type" content="website">
@@ -41,26 +41,26 @@
     <!--==================== HEADER ====================-->
    <header class="header" id="header">
     <nav class="nav container">
-       <a href="#" class="nav__logo">
+       <a href="./index.html" class="nav__logo">
           <img class="nav__img" src="./assets/img/logo.png" alt="logo">
        </a>
 
        <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
              <li class="nav__item">
-                <a href="#" class="nav__link active">Home</a>
+                <a href="./index.html" class="nav__link">Home</a>
              </li>
 
              <li class="nav__item">
-                <a href="./insurance-and-simulation.html" class="nav__link">Insurance <br>& Simulation</a>
+                <a href="./insurance-and-simulation.html" class="nav__link">Seguros <br>& Simulações</a>
              </li>
 
              <li class="nav__item">
-                <a href="./promotion-and-benefits.html" class="nav__link">Promotion <br>& Benefits</a>
+                <a href="./promotion-and-benefits.html" class="nav__link">Promoções <br>& Beneficios</a>
              </li>
 
              <li class="nav__item">
-                <a href="./contact.html" class="nav__link">Contact</a>
+                <a href="#" class="nav__link active">Contatos</a>
              </li>
           </ul>
 
@@ -96,12 +96,12 @@
           <label for="password" class="login__label">Password</label>
        </div>
 
-       <div>
+       <div class="login__actions">
           <p class="login__signUp">
-             Do not have an account yet? <a href="#" id="login-signUp">Sign up</a>
+             Do not have an account yet? <a class="login__link" href="#" id="login-signUp">Sign up</a>
           </p>
 
-          <a href="#" class="login__forgot">
+          <a class="login__link" href="#" class="login__forgot">
              Forgot your password?
           </a>
 
@@ -184,14 +184,14 @@
 
     <main class="main container main__contact ">
         <!--==================== CONTACT INFO ====================-->
-        <h2 class="contact__title">Contact Us</h2>
+        <h2 class="contact__title">Entre em contato</h2>
 
         <section class="contact__info">
             <div class="info__content">
                 <div class="info__group">
                     <i class="ri-phone-line info__icon"></i>
                     <div class="info__group-text">
-                        <p class="info__paragraph">Phone Number:</p>
+                        <p class="info__paragraph">Telemovel:</p>
                         <a class="info__link" href="tel:123456789">123 456 789</a>
                     </div>
                 </div>
@@ -206,7 +206,7 @@
                 <div class="info__group">
                     <i class="ri-home-2-line info__icon"></i>
                     <div class="info__group-text">
-                        <p class="info__paragraph">Address:</p>
+                        <p class="info__paragraph">Endereço:</p>
                         <a class="info__link" href="https://maps.app.goo.gl/8DLYvCBKG6TsqVX36">Campo Grande 400,
                             1700-098 Lisboa</a>
                     </div>
@@ -217,18 +217,18 @@
                         <tr>
                             <th class="table__title" colspan="2">
                                 <i class="ri-time-line info__icon-time"></i>
-                                Opening Hours:
+                                Horarios de abertura:
                             </th>
                         </tr>
                     </thead>
                     <tbody class="table__rows">
                         <tr class="table__row">
-                            <td>Monday-Friday</td>
+                            <td>Segunda a Sexta-Feira</td>
                             <td>8:00 - 18:00</td>
                         </tr>
                         <tr class="table__row">
-                            <td>Saturday-Sunday</td>
-                            <td>Closed</td>
+                            <td>Sabados e Domingos</td>
+                            <td>Fechado</td>
                         </tr>
                     </tbody>
                 </table>
@@ -242,25 +242,25 @@
       <!--==================== CONTACT-FORM ====================-->
         <section>
             <form class="contact__form" id="contact-form" action="">
-                <h3 class="form__title">Send us a message</h3>
+                <h3 class="form__title">Nos envie uma mensagem</h3>
                 <div class="form__group">
-                    <input class="form__input" id="contact-name" name="user_name" type="text" placeholder="Type your Name" required>
-                    <label class="form__label" for="name">Name</label>
+                    <input class="form__input" id="contact-name" name="user_name" type="text" placeholder="Digite seu nome" required>
+                    <label class="form__label" for="name">Nome</label>
                 </div>
                 <div class="form__group">
-                    <input class="form__input" id="contact-email" name="user_email" type="email" placeholder="Enter with your Email Address" required>
+                    <input class="form__input" id="contact-email" name="user_email" type="email" placeholder="Digite seu endereço de email" required>
                     <label class="form__label" for="email">Email</label>
                 </div>
                 <div class="form__group">
-                    <input class="form__input" id="contact-subject" name="user_subject" type="text" placeholder="What is the subject?"
+                    <input class="form__input" id="contact-subject" name="user_subject" type="text" placeholder="Qual assunto quer tratar?"
                         required>
-                    <label class="form__label" for="subject">Subject</label>
+                    <label class="form__label" for="subject">Assunto</label>
                 </div>
                 <div class="form__group">
-                    <textarea class="form__area" id="contact-message" name="user_message" placeholder="Type here..." required></textarea>
-                    <label class="form__label" for="message">Message</label>
+                    <textarea class="form__area" id="contact-message" name="user_message" placeholder="Digite aqui..." required></textarea>
+                    <label class="form__label" for="message">Mensagem</label>
                 </div>
-                <button class="form__button" type="submit">Send</button>
+                <button class="form__button" type="submit">Enviar</button>
                 <span class="form__status" id="contact-status"></span>
             </form>
         </section>

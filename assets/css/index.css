@@ -78,6 +78,17 @@
     }
 }
 
+@media screen and (max-width: 415px) {
+    .banner__title {
+        font-size: 2.5rem;
+    }
+
+    .banner__subtitle {
+        font-size: 1.25rem;
+        padding-inline: 1rem;
+    }
+}
+
 /*=============== COMMENT ===============*/
 
 .comment {
