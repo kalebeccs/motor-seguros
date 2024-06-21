@@ -7,6 +7,10 @@ const profileName = document.getElementById('profile-name'),
 // Get the user from the local storage
 const user = JSON.parse(sessionStorage.getItem("user"));
 
+if(user == null) {
+    window.location.replace('../../index.html')
+}
+
 // Set the values to the elements
 profileAvatar.src = `https://github.com/${user.username}.png`
 profileName.textContent = `${user.firstname} ${user.lastname}`
