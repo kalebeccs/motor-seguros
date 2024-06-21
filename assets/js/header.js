@@ -43,7 +43,6 @@ signUpBtn.addEventListener('click', () => {
 /* Sign up hidden */
 signUpClose.addEventListener('click', () => {
     signUp.classList.remove('show-signUp');
-    login.classList.add('show-login');
 })
 
 /* Login show */

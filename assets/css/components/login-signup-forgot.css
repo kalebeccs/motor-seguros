@@ -97,6 +97,26 @@
   transform: translateY(-38px);
 }
 
+.login__signUp{
+  padding-bottom: 1rem;
+}
+
+.login__signUp a,
+.signUp__login a,
+.forgot__login a{
+  color: var(--c1);
+}
+
+.login__signUp a:hover,
+.signUp__login a:hover,
+.forgot__login a:hover{
+  text-decoration: underline;
+}
+
+.login__forgot:hover{
+  text-decoration: underline;
+}
+
 .login__span,
 .signUp__span,
 .forgot__span {
