@@ -34,7 +34,8 @@
 
   /*Color mode HEX #RRGGBB*/
   --white-color: #FFFFFF;
-  --black-color: #000000;
+  --black-color: #000;
+  --black-transparent: #00000083;
 
   --darkblue: #05191f;
   --lightblue: #166d83;

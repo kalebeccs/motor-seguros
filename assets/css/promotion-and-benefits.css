@@ -19,11 +19,44 @@
     height: 100%;
 }
 
+.carousel__article{
+    position: relative;
+}
+
 .carousel__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.carousel__shadow__bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-transparent);
+    z-index: 1;
+}
+
+.carousel__text__bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel__text{
+    background-color: var(--c2);
+    border-radius: .5rem;
+    color: var(--white-color);
+    padding: 3rem;
+    z-index: 100;
 }
 
 .carousel__button-prev,
@@ -74,6 +107,9 @@
     .carousel {
         height: calc(100vh - var(--header-height));
     }
+    .carousel__text{
+        padding: 2rem;
+    }
     .carousel__button-prev,
     .carousel__button-next {
         width: 2rem;
@@ -87,6 +123,9 @@
 }
 
 @media screen and (max-width: 576px) {
+    .carousel__text{
+        padding: 1rem;
+    }
     .carousel__button-prev,
     .carousel__button-next {
         background-color: transparent;
@@ -249,6 +288,15 @@
     font-size: 1.5rem;
     color: var(--c2);
 }
+
+@media screen and (max-width: 1024px) {
+    .testimonials{
+        flex-direction: column;
+        row-gap: 3rem;
+        margin-inline: auto;
+    }
+}
+
 /* ---------- Call to Action -------------*/
 .benefits__cta,
 .promotions__cta {

@@ -22,6 +22,15 @@
   transition: color .4s;
 }
 
+.nav__img{
+  filter: invert(100%);
+  width: 6rem;
+}
+
+.nav__img:hover{
+  filter: invert(50%) sepia(45%) saturate(2689%) hue-rotate(159deg) brightness(92%) contrast(102%);
+}
+
 .nav__actions{
   display: flex;
   align-items: center;
@@ -299,6 +308,9 @@
   .nav{
     height: calc(var(--header-height) + 2rem);
     column-gap: 3rem;
+  }
+  .nav__img{
+    width: 10rem;
   }
   .nav__close,
   .nav__toggle{
