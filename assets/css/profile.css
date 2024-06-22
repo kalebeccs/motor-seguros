@@ -28,12 +28,17 @@
 }
 
 .profile-page {
+    height: 200vh;
+}
+
+.profile-container {
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 10rem;
 
-    .content{
+    .profile-content {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -83,10 +88,68 @@
             border-radius: 2rem;
             background: linear-gradient(100deg, var(--c1) 30%, var(--c2) 100%);
             box-shadow: rgba(50, 50, 93, 0.11) 0px 4px 6px, rgba(0, 0, 0, 0.08) 0px 1px 3px;
-            transform: translateY(-10%);
+            &:hover {
+                background: linear-gradient(100deg, var(--c3) 30%, var(--c1) 100%);
+            }
         }
     }
-    
+}
+
+.simulations-container {
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    top: -100%;
+    transition: top 1s ease, opacity 0.3s ease, visibility 0.3s ease;
+    z-index: -1;
+    padding-top: 5rem;
+
+    .simulations-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: 80%;
+        gap: 1rem;
+        padding: 2rem;
+        border-radius: 2rem;
+        background: linear-gradient(100deg, var(--c1) 30%, var(--c2) 70%);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+        h2 {
+            padding-top: 1rem;
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: yellow;
+        }
+
+        .simulations {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+
+            p {
+                font-size: 1.25rem;
+                color: var(--c3);
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+.simulations-container.active {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+    z-index: 1;
+    transition: top 1s ease, opacity 0.3s ease, visibility 0.3s ease;
 }
 
 @media screen and (max-width: 1024px) {
@@ -95,10 +158,10 @@
         height: 40px;
     }
 
-    .profile-page {
+    .profile-container {
         padding-top: 10rem;
 
-        .content {
+        .profile-content {
             max-width: 420px;
             padding: 0;
             border-radius: 0%;
@@ -112,6 +175,28 @@
                 width: 10rem;
                 height: 10rem;
                 transform: translateY(-50%);
+            }
+        }
+    }
+
+    .simulations-container {
+        .simulations-content {
+            padding: 0;
+            border-radius: 0%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin: auto;
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .simulations {
+                p {
+                    font-size: 1rem;
+                }
             }
         }
     }
