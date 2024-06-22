@@ -52,8 +52,9 @@
 }
 
 .carousel__text{
-    background-color: var(--c2);
-    border-radius: .5rem;
+    text-shadow: 4px 4px 0px var(--c2);
+    font-size: 5rem;
+    border-radius: 10rem;
     color: var(--white-color);
     padding: 3rem;
     z-index: 100;
@@ -65,7 +66,7 @@
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    background-color: var(--c2);
+    background-color: var(--c2-transparent);
     color: var(--white-color);
     margin-inline: 1.5rem;
     transition: background-color .3s;
@@ -73,7 +74,7 @@
 
 .carousel__button-prev:hover,
 .carousel__button-next:hover {
-    background-color: var(--c1);
+    background-color: var(--c2);
 }
 
 .carousel__arrow-left::before,
