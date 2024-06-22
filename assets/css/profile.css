@@ -45,7 +45,7 @@
         padding: 2rem;
         border-radius: 2rem;
         background-color: var(--container-color);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 10px var(--black-transparent);
 
         .avatar {
             width: 12rem;
@@ -54,7 +54,7 @@
             object-fit: cover;
             object-position: center;
             border-radius: 50%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px var(--black-transparent);
             transform: translateY(-50%);
         }
 
@@ -77,7 +77,7 @@
 
         .sims__button {
             font-size: 1rem;
-            color: rgb(255, 255, 255);
+            color: var(--white-color);
             cursor: pointer;
             padding: 1.2rem 1.8rem;
             border-radius: 2rem;

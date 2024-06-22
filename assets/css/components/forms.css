@@ -1,7 +1,7 @@
 .form__title{
     text-align: center;
     font-size: 1.5rem;
-    color: #333;
+    color: var(--darkgray);
 }
 
 .form__group{
@@ -17,7 +17,7 @@
 .form__input,
 .form__area {
     padding: .75rem 1.25rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--lightgray);
     border-radius: .25rem;
     order: 1;
 }
@@ -30,7 +30,7 @@
 .form__input:focus,
 .form__area:focus {
     border-color: var(--c1);
-    box-shadow: 0 2px 16px hsla(230, 75%, 32%, .15);
+    box-shadow: 0 2px 16px var(--boxshadow-color);
 }
 
 .form__input:focus ~ .form__label,
@@ -43,7 +43,7 @@
     width: 80%;
     margin-inline: auto;
     background-color: var(--c2);
-    color: white;
+    color: var(--white-color);
     font-weight: bold;
     border-radius: .25rem;
     cursor: pointer;
@@ -52,7 +52,7 @@
 
 .form__button:hover {
     background-color: var(--c1);
-    box-shadow: 0 2px 16px hsla(230, 75%, 32%, .15);
+    box-shadow: 0 2px 16px var(--boxshadow-color);
 }
 
 .form__status{

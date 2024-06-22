@@ -7,7 +7,7 @@
 
 .contact__title{
     text-align: center;
-    color: #333;
+    color: var(--darkgray);
     font-size: 1.75rem;
 }
 
@@ -127,7 +127,7 @@
     height: 30rem;
     border: 1px solid lightgray;
     border-radius: .25rem;
-    box-shadow: 0 2px 16px hsla(230, 75%, 32%, .15);
+    box-shadow: 0 2px 16px var(--boxshadow-color);
 }
 
 @media screen and (max-width: 1024px) {

@@ -18,29 +18,25 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(194, 71%, 50%);
-  --title-color: hsl(191, 20%, 21%);
-  --text-color: hsl(230, 12%, 40%);
-  --body-color: hsl(230, 100%, 98%);
-  --container-color: hsl(230, 100%, 97%);
-  --border-color: hsl(230, 25%, 80%);
-
   --c1: hsl(194, 71%, 50%);
   --c2: hsl(194, 70%, 74%);
-  --c2-transparent: hsla(194, 70%, 74%, .5);
   --c2-hover: hsl(194, 70%, 68%);
+  --c2-transparent: hsla(194, 70%, 74%, .5);
   --c3: hsl(194, 71%, 27%);
-  --c4: hsl(210, 7%, 52%);
   --c5: hsl(188, 6%, 75%);
   --c6: hsl(191, 20%, 21%);
-
-  /*Color mode HEX #RRGGBB*/
-  --white-color: #FFFFFF;
-  --black-color: #000;
-  --black-transparent: #00000083;
-
-  --darkblue: #05191f;
-  --lightblue: #166d83;
+  
+  --first-color: hsl(194, 71%, 50%);
+  --container-color: hsl(230, 100%, 97%);
+  --title-color: hsl(191, 20%, 21%);
+  --white-color: hsl(0, 0%, 100%);
+  --black-color: hsl(0, 0%, 0%);
+  --black-transparent: hsla(0, 0%, 0%, .5);
+  --darkblue: hsl(194, 72%, 7%);
+  --lightgray: hsl(0, 0%, 87%);
+  --darkgray: hsl(0, 0%, 20%);
+  --border-color: hsl(230, 25%, 80%);
+  --boxshadow-color: hsla(230, 75%, 32%, .15);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/

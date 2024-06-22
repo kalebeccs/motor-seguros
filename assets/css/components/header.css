@@ -5,7 +5,7 @@
   left: 0;
   width: 100%;
   background-color: var(--body-color);
-  box-shadow: 0 2px 16px hsla(230, 75%, 32%, .15);
+  box-shadow: 0 2px 16px var(--boxshadow-color);
   z-index: var(--z-fixed);
 }
 
@@ -57,7 +57,7 @@
     top: -100%;
     left: 0;
     background-color: var(--body-color);
-    box-shadow: 0 8px 16px hsla(230, 75%, 32%, .15);
+    box-shadow: 0 8px 16px var(--boxshadow-color);
     width: 100%;
     padding-block: 4.5rem 4rem;
     transition: top .4s;
