@@ -23,181 +23,213 @@
     transition: border-color .3s;
 }
 
+@media screen and (max-width: 1024px) {
+    .nav__avatar{
+        width: 40px;
+        height: 40px;
+    }
+}
+
 .nav__avatar:hover{
     border: 2px solid var(--c1);
 }
 
-.profile-page {
-    height: 200vh;
+.main__profile {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
 }
 
-.profile-container {
-    height: 100vh;
+/*=============== PROFILE ===============*/
+.profile {
+    min-height: calc(100vh - (var(--header-height) + 2rem)); 
+}
+
+.profile__container {
+    width: 800px;
+    margin-inline: auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding-top: 10rem;
+    gap: 1.5rem;
+    margin-top: 9rem;
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    background-color: var(--container-color);
+    box-shadow: 0px 8px 32px var(--black-transparent);
+}
 
-    .profile-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 90%;
-        width: 90%;
-        max-width: 800px;
-        gap: 1rem;
-        padding: 2rem;
-        border-radius: 2rem;
-        background-color: var(--container-color);
-        box-shadow: 0 0 10px var(--black-transparent);
+.profile__avatar {
+    margin-top: -9rem;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 2;
+    box-shadow: 0px 0px 16px var(--black-transparent);
+}
 
-        .avatar {
-            width: 12rem;
-            height: 12rem;
-            z-index: 2;
-            object-fit: cover;
-            object-position: center;
-            border-radius: 50%;
-            box-shadow: 0 0 10px var(--black-transparent);
-            transform: translateY(-50%);
-        }
+.profile__name {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--c1);
+}
 
-        .name {
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: var(--c1);
-            transform: translateY(-200%);
-        }
+.profile__address {
+    font-size: 1.25rem;
+    margin-top: -1rem;
+}
 
-        .address {
-            font-size: 1.25rem;
-            transform: translateY(-450%);
-        }
+.profile__phone {
+    font-size: 1.25rem;
+    margin-top: 3.5rem;
+}
+.profile__email {
+    margin-top: -1rem;
+    font-size: 1.25rem;
+}
 
-        .email, .phone {
-            font-size: 1.35rem;
-            transform: translateY(-150%);
-        }
+.profile__btn {
+    cursor: pointer;
+    color: var(--container-color);
+    font-size: 1.125rem;
+    padding: 1rem 1.75rem;
+    border-radius: 3rem;
+    background-image: linear-gradient(100deg, var(--c1) 30%, var(--c2) 100%);
+    box-shadow: rgba(50, 50, 93, 0.11) 0px 4px 6px, rgba(0, 0, 0, 0.08) 0px 1px 3px;
+}
 
-        .sims__button {
-            font-size: 1rem;
-            color: var(--white-color);
-            cursor: pointer;
-            padding: 1.2rem 1.8rem;
-            border-radius: 2rem;
-            background: linear-gradient(100deg, var(--c1) 30%, var(--c2) 100%);
-            box-shadow: rgba(50, 50, 93, 0.11) 0px 4px 6px, rgba(0, 0, 0, 0.08) 0px 1px 3px;
-            &:hover {
-                background: linear-gradient(100deg, var(--c3) 30%, var(--c1) 100%);
-            }
-        }
+.profile__btn:hover{
+    background-image: linear-gradient(100deg, var(--c3) 30%, var(--c1) 100%);
+}
+
+@media screen and (max-width: 1024px) {
+    .profile {
+        min-height: calc(100vh - var(--header-height));
+    }
+    .profile__container {
+        width: 100%;
+        margin-top: 8rem;
+    }
+    .profile__avatar {
+        margin-top: -8rem;
+        width: 10rem;
+        height: 10rem;
+    }
+    .profile__name {
+        font-size: 2rem;
     }
 }
 
-.simulations-container {
-    height: 100vh;
+@media screen and (max-width: 576px) {
+    .profile{
+        display: flex;
+        align-items: center;
+    }
+    .profile__container {
+        padding: 2rem 1.5rem;
+        margin-top: 2rem;
+    }
+    .profile__avatar {
+        margin-top: -6rem;
+        width: 8rem;
+        height: 8rem;
+    }
+    .profile__name {
+        font-size: 1.75rem;
+    }
+    .profile__address {
+        font-size: 1.125rem;
+        margin-top: -1rem;
+    }
+    .profile__phone {
+        font-size: 1.125rem;
+        margin-top: 1.5rem;
+    }
+    .profile__email {
+        margin-top: -1rem;
+        font-size: 1.125rem;
+    }
+}
+
+/*=============== SIMULATIONS ===============*/
+.simulations {
+    padding-top: 8.5rem;
+    min-height: calc(100vh - 3rem);
     display: none;
-    justify-content: center;
-    align-items: center;
     opacity: 0;
     visibility: hidden;
     position: relative;
     top: -100%;
     transition: top 1s ease, opacity 0.3s ease, visibility 0.3s ease;
     z-index: -1;
-    padding-top: 5rem;
-
-    .simulations-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 80%;
-        height: 80%;
-        gap: 1rem;
-        padding: 2rem;
-        border-radius: 2rem;
-        background: linear-gradient(100deg, var(--c1) 30%, var(--c2) 70%);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
-        h2 {
-            padding-top: 1rem;
-            font-size: 2.5rem;
-            font-weight: 900;
-            color: yellow;
-        }
-
-        .simulations {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-
-            p {
-                font-size: 1.25rem;
-                color: var(--c3);
-                margin-bottom: 1rem;
-            }
-        }
-    }
 }
 
-.simulations-container.active {
+.simulations--active {
     display: flex;
     opacity: 1;
     visibility: visible;
     top: 0;
     z-index: 1;
     transition: top 1s ease, opacity 0.3s ease, visibility 0.3s ease;
+
+    font-weight: initial;
+}
+
+.simulations__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3rem;
+    padding: 3rem 1.5rem;
+    border-radius: 2rem;
+    background: linear-gradient(100deg, var(--c1) 30%, var(--c2) 70%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);        
+}
+
+.simulations__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: hsl(50, 100%, 60%);
+}
+
+.simulations__img {
+    width: 20rem;
 }
 
 @media screen and (max-width: 1024px) {
-    .nav__avatar{
-        width: 40px;
-        height: 40px;
+    .simulations{
+        padding-top: 6.5rem;
     }
-
-    .profile-container {
-        padding-top: 10rem;
-
-        .profile-content {
-            max-width: 420px;
-            padding: 0;
-            border-radius: 0%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 100%;
-            margin: auto;
-
-            avatar {
-                width: 10rem;
-                height: 10rem;
-                transform: translateY(-50%);
-            }
-        }
+    .simulations__content {justify-content: center;
+        padding-block: 2rem;
+        row-gap: 2rem;
+        background: linear-gradient(100deg, var(--c1) 60%, var(--c2) 80%);
     }
+    .simulations__title {
+        
+        font-size: 2rem;
+    }
+    .simulations__img{
+        width: 15rem;
+    }
+}
 
-    .simulations-container {
-        .simulations-content {
-            padding: 0;
-            border-radius: 0%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 100%;
-            margin: auto;
-
-            h2 {
-                font-size: 2rem;
-            }
-
-            .simulations {
-                p {
-                    font-size: 1rem;
-                }
-            }
-        }
+@media screen and (max-width: 576px) {
+    .simulations {
+        padding-top: 0;
+        min-height: initial;
+    }
+    .simulations__content {
+        padding-block: 2rem;
+        row-gap: 2rem;
+    }
+    .simulations__title {
+        font-size: 1.5rem;
+    }
+    .simulations__img{
+        width: 10rem;
     }
 }

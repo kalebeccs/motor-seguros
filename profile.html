@@ -72,7 +72,7 @@
             <!-- Avatar -->
             <a class="nav__exit" href="#">
                <i class="ri-logout-box-line" id="nav-exit"></i>
-               <img class="nav__avatar" src="./assets/img/avatar-blank.webp" alt="Avatar" id="nav-avatar">
+               <img class="nav__avatar" id="nav-avatar" src="./assets/img/avatar-blank.webp" alt="image avatar">
             </a>
 
             <!-- Toggle button -->
@@ -83,32 +83,29 @@
       </nav>
    </header>
 
-   <main class="profile-page">
+   <!--==================== MAIN ====================-->
+   <main class="main main__profile">
 
-      <section class="profile-container" main container>
-         <div class="profile-content" container>
-            <div class="cover"></div>
-            <img id="profile-avatar" class="avatar" src="./assets/img/avatar-blank.webp" alt="Profile Picture">
+      <section class="profile container">
+         <div class="profile__container">
+            <img class="profile__avatar" id="profile-avatar" src="./assets/img/avatar-blank.webp" alt="Profile Picture">
 
-            <p class="name" id="profile-name">fName lName</p>
-            <p class="address" id="profile-address">address 404 Any</p>
-            <p class="phone" id="profile-phone">123 456 789</p>
-            <p class="email" id="profile-email">Email@gmail.com</p>
+            <p class="profile__name" id="profile-name">fName lName</p>
+            <p class="profile__address" id="profile-address">address 404 Any</p>
+            <p class="profile__phone" id="profile-phone">123 456 789</p>
+            <p class="profile__email" id="profile-email">Email@gmail.com</p>
 
-            <a href="#simulations-container">
-               <button class="sims__button" id="sims__button">Simulations</button>
+            <a class="profile__btn" id="profile-to-simulations" href="#simulations">
+               Simulations
             </a>
          </div>
       </section>
 
-      <section class="simulations-container" id="simulations-container">
-         <div class="simulations-content">
-            <h2>&#x26A0; Still in Construction &#x26A0;</h2>
-            <div class="simulations" id="simulations">
-               <img src="./assets/img/barreira.webp" alt="barreira de obras">
-         </div>
+      <section class="simulations container" id="simulations">
+         <div class="simulations__content">
+            <h2 class="simulations__title">&#x26A0; Still in Construction &#x26A0;</h2>
+            <img class="simulations__img" src="./assets/img/barreira.webp" alt="barreira de obras">
       </section>
-
    </main>
 
    <!--==================== FOOTER ====================-->
