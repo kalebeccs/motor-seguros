@@ -8,18 +8,19 @@
     <!--=============== REMIXICONS ===============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
-    <!--=============== SWIPER =============-->
+    <!--=============== SwiperCSS =============-->
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
-    <script src="./assets/js/swiper-bundle.min.js" defer></script>
-
+    
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./assets/css/styles.css">
 
     <!--=============== JS ===============-->
     <script src="./assets/js/header.js" defer></script>
-    <script src="./assets/js/main.js" defer></script>
     <script src="./assets/js/authentication.js" defer></script>
-    <script src="./assets/js/login-signup-forgot.js" defer></script>
+
+    <!--=============== SwiperJS =============-->
+    <script src="./assets/js/swiper-bundle.min.js" defer></script>
+    <script src="./assets/js/swiper.js" defer></script>
 
     <!--=============== TITLE AND ICON ===============-->
     <title>Promoções & Beneficios | MotorSeguros</title>
@@ -43,145 +44,145 @@
 
 <body>
     <!--==================== HEADER ====================-->
-   <header class="header" id="header">
-    <nav class="nav container">
-        <a href="./index.html" class="nav__logo">
-            <img class="nav__img" src="./assets/img/logo.webp" alt="logo">
-        </a>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="./index.html" class="nav__logo">
+                <img class="nav__img" src="./assets/img/logo.webp" alt="logo">
+            </a>
 
-        <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="./index.html" class="nav__link">Home</a>
-                </li>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link">Home</a>
+                    </li>
 
-                <li class="nav__item">
-                    <a href="./insurance-and-simulation.html" class="nav__link">Seguros <br>& Simulações</a>
-                </li>
+                    <li class="nav__item">
+                        <a href="./insurance-and-simulation.html" class="nav__link">Seguros <br>& Simulações</a>
+                    </li>
 
-                <li class="nav__item">
-                    <a href="#" class="nav__link active">Promoções <br>& Beneficios</a>
-                </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link active">Promoções <br>& Beneficios</a>
+                    </li>
 
-                <li class="nav__item">
-                    <a href="./contact.html" class="nav__link">Contatos</a>
-                </li>
-            </ul>
+                    <li class="nav__item">
+                        <a href="./contact.html" class="nav__link">Contatos</a>
+                    </li>
+                </ul>
 
-            <!-- Close button -->
-            <div class="nav__close" id="nav-close">
-                <i class="ri-close-line"></i>
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
             </div>
-        </div>
 
-        <div class="nav__actions">
-            <!-- Login button -->
-            <i class="ri-user-line nav__login" id="login-btn"></i>
+            <div class="nav__actions">
+                <!-- Login button -->
+                <i class="ri-user-line nav__login" id="login-btn"></i>
 
-            <!-- Toggle button -->
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-menu-line"></i>
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
             </div>
-        </div>
         </nav>
     </header>
 
- <!--==================== LOGIN ====================-->
- <div class="login" id="login">
-    <form action="" class="login__form">
-       <h2 class="login__title">Log In</h2>
+    <!--==================== LOGIN ====================-->
+    <div class="login" id="login">
+        <form action="" class="login__form">
+            <h2 class="login__title">Log In</h2>
 
-       <div class="login__group">
-          <input type="text" name="email" id="email" class="login__input" required>
-          <label for="email" class="login__label">Email</label>
-       </div>
-       <div class="login__group">
-          <input type="password" id="password" class="login__input" required>
-          <label for="password" class="login__label">Password</label>
-       </div>
+            <div class="login__group">
+                <input type="text" name="email" id="email" class="login__input" required>
+                <label for="email" class="login__label">Email</label>
+            </div>
+            <div class="login__group">
+                <input type="password" id="password" class="login__input" required>
+                <label for="password" class="login__label">Password</label>
+            </div>
 
-          <button type="submit" class="login__button" id="login__button">Log In</button>
-       <div>
-          <p class="login__signUp">
-             Do not have an account yet? <a href="#" id="login-signUp">Sign up</a>
-          </p>
+            <button type="submit" class="login__button" id="login__button">Log In</button>
+            <div>
+                <p class="login__signUp">
+                    Do not have an account yet? <a href="#" id="login-signUp">Sign up</a>
+                </p>
 
-          <a href="#" class="login__forgot" id="login-forgot">
-             Forgot your password?
-          </a>
+                <a href="#" class="login__forgot" id="login-forgot">
+                    Forgot your password?
+                </a>
 
-          <span class="login__span" id="status"></span>
-       </div>
-    </form>
+                <span class="login__span" id="status"></span>
+            </div>
+        </form>
 
-    <i class="ri-close-line login__close" id="login-close"></i>
- </div>
+        <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
 
- <!--==================== SIGN UP ====================-->
- <div class="signUp" id="signUp">
-    <form action="" class="signUp__form">
-       <h2 class="signUp__title">Sign Up</h2>
+    <!--==================== SIGN UP ====================-->
+    <div class="signUp" id="signUp">
+        <form action="" class="signUp__form">
+            <h2 class="signUp__title">Sign Up</h2>
 
-       <div class="signUp__group">
-          <div>
-             <input type="text" id="fName" class="signUp__input" required>
-             <label for="fName" class="signUp__label">First Name</label>
-          </div>
+            <div class="signUp__group">
+                <div>
+                    <input type="text" id="fName" class="signUp__input" required>
+                    <label for="fName" class="signUp__label">First Name</label>
+                </div>
 
-          <div>
-             <input type="text" id="lName" class="signUp__input" required>
-             <label for="lName" class="signUp__label">Last Name</label>
-          </div>
+                <div>
+                    <input type="text" id="lName" class="signUp__input" required>
+                    <label for="lName" class="signUp__label">Last Name</label>
+                </div>
 
-          <div>
-             <input type="text" name="email" id="email" class="signUp__input" required>
-             <label for="email" class="signUp__label">Email</label>
-          </div>
+                <div>
+                    <input type="text" name="email" id="email" class="signUp__input" required>
+                    <label for="email" class="signUp__label">Email</label>
+                </div>
 
-          <div>
-             <input type="password" id="password" class="signUp__input" required>
-             <label for="password" class="signUp__label">Password</label>
-          </div>
+                <div>
+                    <input type="password" id="password" class="signUp__input" required>
+                    <label for="password" class="signUp__label">Password</label>
+                </div>
 
-          <div>
-             <input type="password" id="password_repeat" class="signUp__input" required>
-             <label for="password" class="signUp__label">Repeat Password</label>
-          </div>
+                <div>
+                    <input type="password" id="password_repeat" class="signUp__input" required>
+                    <label for="password" class="signUp__label">Repeat Password</label>
+                </div>
 
-             <button type="submit" class="signUp__button" id="signUp__button">Sign Up</button>
-          <div>
-             <p class="signUp__login">
-                Already have an account? <a href="#" id="signUp-log-in">Log In</a>
-             </p>
-          </div>
-       </div>
-    </form>
+                <button type="submit" class="signUp__button" id="signUp__button">Sign Up</button>
+                <div>
+                    <p class="signUp__login">
+                        Already have an account? <a href="#" id="signUp-log-in">Log In</a>
+                    </p>
+                </div>
+            </div>
+        </form>
 
-    <i class="ri-close-line signUp__close" id="signUp-close"></i>
- </div>
+        <i class="ri-close-line signUp__close" id="signUp-close"></i>
+    </div>
 
- <!--==================== FORGOT ====================-->
- <div class="forgot" id="forgot">
-    <form action="" class="forgot__form">
-       <h2 class="forgot__title">Forgot your password</h2>
+    <!--==================== FORGOT ====================-->
+    <div class="forgot" id="forgot">
+        <form action="" class="forgot__form">
+            <h2 class="forgot__title">Forgot your password</h2>
 
-       <div class="forgot__group">
-          <div>
-             <input type="email" id="forgot-email" class="forgot__input" required>
-             <label for="forgot-email" class="forgot__label">Email</label>
-          </div>
-       </div>
+            <div class="forgot__group">
+                <div>
+                    <input type="email" id="forgot-email" class="forgot__input" required>
+                    <label for="forgot-email" class="forgot__label">Email</label>
+                </div>
+            </div>
 
-          <button type="submit" class="forgot__button" id="forgot__button">Send</button>
-       <div>
-          <p class="forgot__login">
-             Do you want to try again? <a href="#" id="forgot-log-in">Log In</a>
-          </p>
-       </div>
-    </form>
+            <button type="submit" class="forgot__button" id="forgot__button">Send</button>
+            <div>
+                <p class="forgot__login">
+                    Do you want to try again? <a href="#" id="forgot-log-in">Log In</a>
+                </p>
+            </div>
+        </form>
 
-    <i class="ri-close-line forgot__close" id="forgot-close"></i>
- </div>
+        <i class="ri-close-line forgot__close" id="forgot-close"></i>
+    </div>
 
     <!--==========================Carousel=================================================-->
     <main class="main main__pb">
@@ -308,23 +309,23 @@
             <div class="testimonials">
                 <div class="testimonials__div">
                     <h3 class="testimonials__title"> Cliente +50? Tem direito a desconto Sénior!</h3>
-                <div class="testimonials__content">
-                    <img class="testimonials__img" src="assets/img/testimonial-ambrosio.webp" alt="">
-                    <p class="testimonials__desc">
-                        <span>"</span> O Ambrósio já aproveitou o seu desconto Sénior! <span>"</span>
-                    </p>
-                </div>
+                    <div class="testimonials__content">
+                        <img class="testimonials__img" src="assets/img/testimonial-ambrosio.webp" alt="">
+                        <p class="testimonials__desc">
+                            <span>"</span> O Ambrósio já aproveitou o seu desconto Sénior! <span>"</span>
+                        </p>
+                    </div>
                 </div>
                 <div class="testimonials__div">
                     <h3 class="testimonials__title"> Carro com mais de 20 anos?</h3>
-                <div class="testimonials__content">
-                    <img class="testimonials__img" src="assets/img/testimonial-rafael.webp" alt="">
-                    <p class="testimonials__desc">
-                        <span>"</span> O Rafael já economizou com o seu desconto clássico! <span>"</span>
-                    </p>
+                    <div class="testimonials__content">
+                        <img class="testimonials__img" src="assets/img/testimonial-rafael.webp" alt="">
+                        <p class="testimonials__desc">
+                            <span>"</span> O Rafael já economizou com o seu desconto clássico! <span>"</span>
+                        </p>
+                    </div>
                 </div>
-                </div>
-                
+
 
             </div>
             <a class="promotions__cta" href="./insurance-and-simulation.html">Faça uma Simulação connosco!</a>

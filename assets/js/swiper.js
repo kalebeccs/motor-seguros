@@ -18,7 +18,7 @@ let swiperCards = new Swiper('.carousel__content', {
 });
 
 /*=============== SWIPER INDEX ===============*/
-let swiperCards2 = new Swiper('.comment__content', {
+let swiperCardsIndex = new Swiper('.comment__content', {
     loop: true,
     spaceBetween: 0,
     grabCursor: true,
@@ -29,6 +29,7 @@ let swiperCards2 = new Swiper('.comment__content', {
         prevEl: '.swiper-button-prev',
     },
 
+    //Pagination
     pagination: {
         el: '.swiper-pagination',
         clickable: true,

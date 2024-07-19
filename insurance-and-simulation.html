@@ -13,9 +13,7 @@
 
    <!--=============== JS ===============-->
    <script src="./assets/js/header.js" defer></script>
-   <script src="./assets/js/main.js" defer></script>
-   <script src="./assets/js/authentication.js" defer></script>
-   <script src="./assets/js/login-signup-forgot.js" defer></script>
+   <script src="./assets/js/simulation.js" defer></script>
 
    <!--=============== TITLE AND ICON ===============-->
    <title>Seguros & Simulações | MotorSeguros</title>
@@ -224,25 +222,25 @@
          </div>
       </section>
       <!---=========================Simulation Form===============================--->
-      <form class="simulation__form" action="">
+      <form class="simulation__form" id="simulation-form" action="">
          <h2 class="form__title">Faça uma Simulação</h2>
          <div class="form__group">
-            <input class="form__input" id="name" type="text" placeholder="Digite seu nome">
+            <input class="form__input" id="simulation-name" type="text" placeholder="Digite seu nome" required>
             <label class="form__label" for="name">Nome</label>
          </div>
          <div class="form__group">
-            <input class="form__input" id="nif" type="number" placeholder="NIF">
+            <input class="form__input" id="simulation-nif" type="number" placeholder="NIF" required>
             <label class="form__label" for="nif">NIF</label>
          </div>
          <div class="form__group">
-            <input class="form__input" id="registration" type="text" placeholder="Informe a matricula">
+            <input class="form__input" id="simulation-registration" type="text" placeholder="Informe a matricula" required>
             <label class="form__label" for="registration">Matricula</label>
          </div>
          <div class="form__group">
-            <input class="form__input" id="email" type="email" placeholder="Email">
+            <input class="form__input" id="simulation-email" type="email" placeholder="Email" required>
             <label class="form__label" for="email">Email</label>
          </div>
-         <button class="form__button" type="submit">Pedir simulação</button>
+         <button class="form__button" id="simulation-submit" type="submit">Pedir simulação</button>
       </form>
       <section class="simulation__cta container"> <!--===============!!!!! Necessitamos desta section?===============-->
          <p class="simulation__cta__text">Se não quiser receber um email, confira outras formas de entrar em contato conosco</p>
