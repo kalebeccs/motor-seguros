@@ -1,7 +1,7 @@
 # Motor Seguros
 
 ![Preview - Home | MotorSeguros](preview.png)
-- Motor Seguros is a project developed for the Web Programming course, aiming to create a website for car and motorcycle insurance. This website allows users to view and purchase insurance in a simple and efficient manner.
+Motor Seguros is a project developed for the Web Programming course, aiming to create a website for car and motorcycle insurance. This website allows users to view and purchase insurance in a simple and efficient manner.
 
 ## Features
 
